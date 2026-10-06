@@ -10,19 +10,19 @@ superseded-by:
 
 ## Question
 
-{{The question we had to answer. One or two sentences.}}
+{{The product question we had to answer. One or two sentences.}}
 
 ## Options
 
 ### A — {{Option name}}
 
-- **Good:** {{What this option gives us.}}
-- **Cost:** {{What it costs us.}}
+- **Good:** {{What this option gives the people who use the product.}}
+- **Cost:** {{What it costs them, or us.}}
 
 ### B — {{Option name}}
 
-- **Good:** {{What this option gives us.}}
-- **Cost:** {{What it costs us.}}
+- **Good:** {{What this option gives the people who use the product.}}
+- **Cost:** {{What it costs them, or us.}}
 
 ## Decision
 
@@ -32,9 +32,10 @@ superseded-by:
 
 {{Why we chose it, and why we rejected the others.}}
 
-## Consequences
+## Affects
 
-- {{What changes because of this decision.}}
+- [[modules/{module}/use-cases/{use-case}]] — how this decision shows up there
+- [[modules/{module}/rules#rule-name]] — the rule that carries this decision
 
 ## When to revisit
 

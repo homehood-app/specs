@@ -14,4 +14,4 @@
 
 - [[domain]] — core concepts and vocabulary
 - [[users]] — user personas and profiles
-- [[decisions/index]] — decisions made about the specs, and why
+- [[decisions/index]] — important product decisions, and why
