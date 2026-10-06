@@ -31,7 +31,9 @@ If the work touches a behavior that is not in the spec, stop and say so. Do not 
 
 - `overview.md` — product vision, business model, core value proposition
 - `domain.md` — vocabulary and concepts shared across the whole product
-- `users.md` — user personas and profiles
+- `users.md` — user personas and the authority each one holds
+
+A root file says what is true across the whole product. What a user may do in one area of the product belongs to that area, never to a root file. "Who can create a task" goes in the module's `rules.md` and in the **By role** section of its use cases — not in `users.md`. The same rule applies to `domain.md`: it names a concept; the module says how the concept behaves.
 
 ### `modules/{module}/`
 
@@ -64,9 +66,9 @@ Always copy the matching template when you create a file.
 
 - File names in kebab-case: `request-payout.md`, not `Request Payout.md`
 - Dates in ISO format: `YYYY-MM-DD`
-- Internal references as wikilinks: `[[note-name]]`, `[[users#parent]]`
+- Internal references as wikilinks: `[[note-name]]`, `[[users#organizer]]`
 - Use cases reference their applicable rules as wikilinks: `[[rules#rule-name]]`
-- Every use case fills the **By role** section. Say what a parent, a child, and another member each see and can do. If behavior changes with the child's age, split the row and name the age band. `Nothing.` is a valid cell; blank is not.
+- Every use case fills the **By role** section. Say what an organizer, a member, and a minor member each see and can do. If behavior changes with a minor's age, split the row and name the age band. `Nothing.` is a valid cell; blank is not.
 - Keep each file focused. A `rules.md` that grows too large means the module should be split.
 - Write in English.
 
