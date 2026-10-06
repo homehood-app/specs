@@ -1,8 +1,10 @@
 # Users
 
-Every use case must say what each of these users sees and can do. See the **By role** section in [[templates/module/use-cases/use-case]].
+The people who use Homehood, and the authority each one has.
 
-The names come from [[domain]]. Organizer and member are permission levels; minor is a property of a member. See [[decisions/0001-household-and-two-member-roles]].
+**Scope of this file.** It says who the users are and what authority each one holds across the whole product. It does not say what a user may do in one area of the product. "Who can create a task", "who can close a task", "who sees another member's work" belong in that module's `rules.md` and in the **By role** section of its use cases — not here. See the **By role** section in [[templates/module/use-cases/use-case]].
+
+The names come from [[domain]]. Organizer and member are levels of authority; minor is a property of a member. See [[decisions/0001-household-and-two-member-roles]].
 
 ## Organizer
 
@@ -12,16 +14,14 @@ The member who administers the household. In a family, usually a parent. In a fl
 
 **Can:**
 
-- Create a household
-- Invite people to the household, and remove members
-- Create a task for themselves or for any other member
-- Edit, start, comment on, close, archive and delete a task
+- Decide who belongs to the household
+- Act with authority over another member's work
 
 **Cannot:**
 
 - Act in a household they do not belong to
 
-**Distinguishing characteristics:** The only role that can change who is in the household. The only role that can assign work to someone else.
+**Distinguishing characteristics:** The only role that can change who is in the household, and the only one with authority over another member.
 
 ## Member
 
@@ -31,16 +31,15 @@ An adult who belongs to the household but does not administer it. In a flat shar
 
 **Can:**
 
-- Create a task for themselves
-- Start, comment on and close their own task
-- See the household's tasks and who owns each one
+- Take part in the household's routine
+- Manage their own work
 
 **Cannot:**
 
-- Invite or remove people
-- Assign a task to another member
+- Change who belongs to the household
+- Act with authority over another member
 
-**Distinguishing characteristics:** Full control over their own work, no control over other people's.
+**Distinguishing characteristics:** Full authority over their own work, none over anyone else's.
 
 ## Minor member
 
@@ -50,20 +49,13 @@ A member under the care of an organizer — in a family, a child. A flat share h
 
 **Can:**
 
-- See the tasks they own
-- Start, comment on and close their own task
+- Take part in the household's routine as a member
 
 **Cannot:**
 
-- Invite or remove people
-- Assign a task to another member
+- Change who belongs to the household
+- Act with authority over another member
 
-**Distinguishing characteristics:** The only user whose view and permissions may be narrowed on account of care rather than permission level.
+**Distinguishing characteristics:** The only user whose view or actions may be narrowed on account of care rather than authority.
 
-**Not yet decided:**
-
-- Whether closing a task needs an organizer to confirm it
-- Whether a minor sees the whole household's tasks or only their own
-- Whether permissions differ by age, and if so which age bands
-
-Until these are decided, a use case that touches a minor must state its assumption in the **By role** section rather than leave the row blank.
+**Not yet decided:** whether a minor's authority differs by age, and if so which age bands. Until that is decided, a use case that narrows what a minor can do must say which ages it applies to.

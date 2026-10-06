@@ -31,7 +31,9 @@ If the work touches a behavior that is not in the spec, stop and say so. Do not 
 
 - `overview.md` — product vision, business model, core value proposition
 - `domain.md` — vocabulary and concepts shared across the whole product
-- `users.md` — user personas and profiles
+- `users.md` — user personas and the authority each one holds
+
+A root file says what is true across the whole product. What a user may do in one area of the product belongs to that area, never to a root file. "Who can create a task" goes in the module's `rules.md` and in the **By role** section of its use cases — not in `users.md`. The same rule applies to `domain.md`: it names a concept; the module says how the concept behaves.
 
 ### `modules/{module}/`
 
