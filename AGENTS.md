@@ -64,9 +64,9 @@ Always copy the matching template when you create a file.
 
 - File names in kebab-case: `request-payout.md`, not `Request Payout.md`
 - Dates in ISO format: `YYYY-MM-DD`
-- Internal references as wikilinks: `[[note-name]]`, `[[users#parent]]`
+- Internal references as wikilinks: `[[note-name]]`, `[[users#organizer]]`
 - Use cases reference their applicable rules as wikilinks: `[[rules#rule-name]]`
-- Every use case fills the **By role** section. Say what a parent, a child, and another member each see and can do. If behavior changes with the child's age, split the row and name the age band. `Nothing.` is a valid cell; blank is not.
+- Every use case fills the **By role** section. Say what an organizer, a member, and a minor member each see and can do. If behavior changes with a minor's age, split the row and name the age band. `Nothing.` is a valid cell; blank is not.
 - Keep each file focused. A `rules.md` that grows too large means the module should be split.
 - Write in English.
 

@@ -10,6 +10,6 @@ Numbers are sequential and never reused.
 
 | № | Decision | Date | Status |
 | --- | --- | --- | --- |
-| | *No decisions recorded yet.* | | |
+| 0001 | [[0001-household-and-two-member-roles]] | 2026-10-06 | accepted |
 
 Use [[templates/decision]] for a new record.
