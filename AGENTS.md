@@ -43,7 +43,7 @@ Everything relevant to one area of the product:
 - `domain.md` — concepts that only exist in this module, or that mean something different here
 - `rules.md` — business rules that apply across several use cases in this module
 - `use-cases/index.md` — list of every use case in the module
-- `use-cases/{use-case}.md` — one file per use case: actor, intent, flows, by role, applied rules
+- `use-cases/{nn}-{use-case}.md` — one file per use case, numbered in reading order: actor, intent, flows, by role, applied rules
 
 ### `decisions/`
 
@@ -65,10 +65,11 @@ Always copy the matching template when you create a file.
 ## Writing conventions
 
 - File names in kebab-case: `request-payout.md`, not `Request Payout.md`
+- Use case file names carry a two-digit order prefix: `01-request-payout.md`. The number gives the reading order within the module. Renumber freely when the order changes
 - Dates in ISO format: `YYYY-MM-DD`
 - Internal references as wikilinks: `[[note-name]]`, `[[users#organizer]]`
 - Use cases reference their applicable rules as wikilinks: `[[rules#rule-name]]`
-- Every use case fills the **By role** section. Say what an organizer, a member, and a minor member each see and can do. If behavior changes with a minor's age, split the row and name the age band. `Nothing.` is a valid cell; blank is not.
+- Every use case fills the **By role** section. Say what an owner, an organizer, a member and a minor member each see and can do. `Nothing.` is a valid cell; blank is not.
 - Keep each file focused. A `rules.md` that grows too large means the module should be split.
 - Write in English.
 

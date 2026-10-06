@@ -1,9 +1,9 @@
 ---
 decision: 0001
 date: 2026-10-06
-status: accepted
+status: superseded
 supersedes:
-superseded-by:
+superseded-by: 0004-four-roles-owner-organizer-member-minor
 ---
 
 # 0001 — Household, not family, and two member roles

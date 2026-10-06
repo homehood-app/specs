@@ -1,34 +1,54 @@
 # Tasks — Business Rules
 
-## Any member can give work to any member
+## Every task has a requester and an executor
 
-Creating a task for someone else is not an organizer's privilege.
+They are two roles on the task, not two people. One member asking for their own work is both.
 
-- Any member can create a task for themselves
-- Any member can create a task for any other member of the same household
+- The requester is the member who asked for the task
+- The executor is the member who will do it
+- A task has exactly one of each
+- Both are members of the same household as the task
+
+## Any member can request work from any member
+
+Asking is not an act of authority. See [[decisions/0002-any-member-can-give-work-to-another]].
+
+- Any member can create a task with themselves as the executor
+- Any member can create a task with any other member as the executor
 - A minor member can do both
 
-## A task has exactly one owner
+## The executor works the task
 
-- The owner is the member the task was created for
-- A task created for nobody in particular is owned by the person who created it
-- The owner is always a member of the same household as the task
+Moving a task through `Started` and `Closed` is the executor's act. Nobody does another member's work for them.
 
-## The owner works the task
+- Only the executor starts their task
+- Only the executor closes their task
 
-Moving a task through its states is the owner's act.
+## A task is visible to its requester, its executor, the owner and every organizer
 
-- Only the owner starts their task
-- Only the owner closes their task
-
-## A task is visible to its owner, its creator and every organizer
-
-- The owner sees their task
-- The member who created it sees it, even when somebody else owns it
-- An organizer sees every task in the household
+- The executor sees it
+- The requester sees it, even when somebody else is the executor
+- The owner and every organizer see every task in the household
 - No other member sees it
 
-## Only an organizer deletes a task
+## Archiving ends a task that was started
 
+`Archived` is where a task goes when it was begun and will not be finished — cancelled, overtaken, no longer wanted. It is kept rather than deleted because by then it carries history.
+
+- Only a task in `Started` can be archived
+- A task that was never started is deleted, not archived
+- A task that is `Closed` stays closed. Finished is not the same as abandoned
+
+## Who can end a task
+
+- The requester can delete a task that has not been started
+- The owner and any organizer can delete any task in the household
+- The executor, the requester, the owner and any organizer can archive a started task
 - Deleting removes the task and everything attached to it
-- Any other member who can see a task can archive it only if they own it
+
+## An organizer cannot act on the owner's work
+
+Mirrors [[household/rules#authority-over-members-runs-owner-organizer-member]]. Authority over a member's work stops at the owner.
+
+- An organizer can edit, archive or delete the task of any member who is not the owner
+- A task whose executor is the owner can be acted on by the owner alone

@@ -27,13 +27,17 @@ As an invited person, I want to accept or decline so that I join the household o
 
 1. The system sets the invitation to `Declined`.
 2. The person does not become a member.
-3. The organizer who sent it sees the answer.
+3. The household sees the answer.
+
+### The person already belongs to other households
+
+1. The system adds this membership to the others. Nothing is replaced.
 
 ## Exception flows
 
 ### The invitation is no longer pending
 
-1. The system refuses and says the invitation is already answered.
+1. The system refuses and says the invitation is already answered or was revoked.
 2. Nothing changes.
 
 ### The household no longer exists
@@ -44,13 +48,14 @@ As an invited person, I want to accept or decline so that I join the household o
 ## Post-conditions
 
 - The invitation is `Accepted` or `Declined`, and cannot be answered again
-- On accept, the person is a member of the household
+- On accept, the person is a member of the household, with the plain member role
 
 ## By role
 
 | Role | Sees | Can do |
 | --- | --- | --- |
-| Organizer | The answer to an invitation they sent | Nothing in this use case. An organizer cannot answer for the invited person |
+| Owner | The answer to any invitation to the household | Nothing. Nobody can answer for the invited person |
+| Organizer | The answer to any invitation to the household | Nothing |
 | Member | Their own pending invitation | Accept it or decline it |
 | Minor member | Their own pending invitation | Accept it or decline it |
 

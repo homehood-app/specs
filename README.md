@@ -43,7 +43,7 @@ The structure follows [SDAD](https://github.com/TiagoDamascena/sdad) (Spec-Drive
 │       ├── rules.md     # Business rules that govern this module
 │       └── use-cases/
 │           ├── index.md # List of all use cases in this module
-│           └── {use-case}.md
+│           └── {nn}-{use-case}.md
 ├── decisions/
 │   ├── index.md         # List of all product decisions, newest first
 │   └── {nnnn}-{slug}.md
@@ -59,7 +59,7 @@ If you are not sure whether an area deserves its own module, ask: can you explai
 
 ## Use cases: the By role section
 
-Every use case must fill a **By role** section saying what an organizer, a member, and a minor member each see and can do. If the behavior changes with a minor's age, split the row and name the age band.
+Every use case must fill a **By role** section saying what an owner, an organizer, a member and a minor member each see and can do.
 
 It is required because Homehood is a product with several roles in one household, and we get the roles wrong by default when the section is optional.
 
@@ -83,7 +83,7 @@ Record a decision when the choice shapes the product and someone will ask "why i
 
 Decision records are **append-only**. Never edit a record to change the outcome. To reverse a decision, write a new record, set `supersedes` on the new record, and set `superseded-by` on the old one.
 
-Numbers are sequential and never reused: `0002-minors-cannot-delete-a-task.md`.
+Numbers are sequential and never reused: `0005-minors-cannot-delete-a-task.md`.
 
 ## Workflow
 
@@ -97,13 +97,14 @@ Numbers are sequential and never reused: `0002-minors-cannot-delete-a-task.md`.
 ### Review a spec
 
 - Make sure every requirement can be tested.
-- Make sure the **By role** section is filled.
+- Make sure the **By role** section is filled, with a row per role.
 - Ask questions in the pull request comments.
 - Merge when the team agrees.
 
 ## Conventions
 
 - File names in kebab-case: `auth-flow.md`, not `Auth Flow.md`
+- Use case file names carry a two-digit order prefix: `01-create-a-household.md`. The number is the order a reader should meet them, not the order they were written. Numbers are renumbered freely when the order changes, because nothing outside the module links to them
 - Dates in ISO format: `YYYY-MM-DD`
 - Internal links as wikilinks: `[[users#organizer]]`
 - Keep each file focused. A `rules.md` that grows too large is a signal to split the module.

@@ -1,21 +1,23 @@
 # Tasks
 
-The household's work: creating a task, saying whose it is, and moving it through its states until it is finished and put away.
+The household's work: asking for a task, saying who will do it, and moving it through its states until it is finished or abandoned.
 
 This is the module the product exists for. A household with no tasks answers no question.
 
 ## Actors
 
-- [[users#organizer]] — sees every task in the household, and is the only role that can delete one
-- [[users#member]] — creates tasks, owns tasks, and works them
-- [[users#minor-member]] — a member under the care of an organizer
+- [[users#owner]] — sees every task in the household, and can act on any of them
+- [[users#organizer]] — sees every task in the household, and can act on the work of any member who is not the owner
+- [[users#member]] — asks for tasks, does tasks, and sees only the tasks that concern them
+- [[users#minor-member]] — a member under the care of the household
 
 ## Responsibilities
 
-- Creating a task, for yourself or for another member
+- Creating a task, and who its requester and its executor are
 - Editing a task
 - Starting, commenting on and closing a task
-- Archiving a task, and deleting a task
+- Archiving a task that was started and will not be finished
+- Deleting a task
 - Who can see which tasks
 
 ## Out of scope
@@ -25,7 +27,7 @@ This is the module the product exists for. A household with no tasks answers no 
 
 ## Related modules
 
-- [[household/overview]] — a task exists inside one household and is owned by one of its members
+- [[household/overview]] — a task exists inside one household, and its requester and executor are members of it
 
 ## Use cases
 

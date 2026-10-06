@@ -6,19 +6,19 @@ superseded-by:
 
 # Invite a person
 
-As an organizer, I want to invite a person so that they can join the household.
+As the owner or an organizer, I want to invite a person so that they can join the household.
 
-**Actors:** [[users#organizer]]
+**Actors:** [[users#owner]], [[users#organizer]]
 
 ## Pre-conditions
 
 - The household exists
-- The actor is an organizer of it
+- The actor is its owner or one of its organizers
 
 ## Main flow
 
-1. The organizer identifies the person to invite.
-2. The organizer says whether the person will be a minor member.
+1. The actor identifies the person to invite.
+2. The actor says whether the person will be a minor member.
 3. The system creates an invitation in state `Pending`.
 4. The system delivers the invitation to the person.
 
@@ -34,12 +34,16 @@ As an organizer, I want to invite a person so that they can join the household.
 1. The system refuses and says an invitation is already waiting.
 2. No second invitation is created.
 
+### The person was invited before and declined, or the invitation was revoked
+
+1. The system creates a new invitation. A final invitation does not block a new one.
+
 ## Exception flows
 
 ### Delivery fails
 
 1. The invitation stays `Pending`.
-2. The system tells the organizer that it could not be delivered.
+2. The system tells the actor that it could not be delivered.
 
 ## Post-conditions
 
@@ -50,11 +54,12 @@ As an organizer, I want to invite a person so that they can join the household.
 
 | Role | Sees | Can do |
 | --- | --- | --- |
-| Organizer | The invitations they have sent, and their state | Invite a person, and set whether they will be a minor member |
+| Owner | Every invitation to the household, and its state | Invite a person, and set whether they will be a minor member |
+| Organizer | Every invitation to the household, and its state | Invite a person, and set whether they will be a minor member |
 | Member | Nothing of this use case | Nothing |
 | Minor member | Nothing of this use case | Nothing |
 
 ## Applied business rules
 
-- [[rules#only-an-organizer-changes-the-membership]] — a member who is not an organizer cannot invite
+- [[rules#the-owner-and-the-organizers-decide-who-belongs]] — a plain member cannot invite
 - [[rules#membership-starts-with-an-accepted-invitation]] — the invitation is the only door in
