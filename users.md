@@ -15,13 +15,15 @@ The member who administers the household. In a family, usually a parent. In a fl
 **Can:**
 
 - Decide who belongs to the household
-- Act with authority over another member's work
+- See everything in the household
+- Remove what another member created
 
 **Cannot:**
 
 - Act in a household they do not belong to
+- Do another member's work for them
 
-**Distinguishing characteristics:** The only role that can change who is in the household, and the only one with authority over another member.
+**Distinguishing characteristics:** The only role that can change who is in the household, the only one that sees all of it, and the only one that can remove what somebody else created.
 
 ## Member
 
@@ -31,15 +33,16 @@ An adult who belongs to the household but does not administer it. In a flat shar
 
 **Can:**
 
-- Take part in the household's routine
 - Manage their own work
+- Give work to another member
 
 **Cannot:**
 
 - Change who belongs to the household
-- Act with authority over another member
+- See what does not concern them
+- Remove what another member created
 
-**Distinguishing characteristics:** Full authority over their own work, none over anyone else's.
+**Distinguishing characteristics:** Can ask anything of anybody, but sees only what concerns them and cannot change the household itself.
 
 ## Minor member
 
@@ -49,13 +52,12 @@ A member under the care of an organizer — in a family, a child. A flat share h
 
 **Can:**
 
-- Take part in the household's routine as a member
+- Everything a member can
 
 **Cannot:**
 
-- Change who belongs to the household
-- Act with authority over another member
+- Everything a member cannot
 
-**Distinguishing characteristics:** The only user whose view or actions may be narrowed on account of care rather than authority.
+**Distinguishing characteristics:** The only user whose view or actions may be narrowed on account of care rather than authority. **No specified behavior narrows them today** — a minor member currently has exactly a member's authority. The role exists in the vocabulary so that care-based limits have a place to attach when we decide on them.
 
 **Not yet decided:** whether a minor's authority differs by age, and if so which age bands. Until that is decided, a use case that narrows what a minor can do must say which ages it applies to.

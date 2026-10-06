@@ -14,10 +14,12 @@ A hosted cloud version is planned, sold as a subscription per household. The sub
 
 ## Core value proposition
 
-Everyone in the home reads the same answer to "who is doing this, and is it done?" without having to ask anyone.
+Everyone knows what is theirs, and somebody holds the whole picture.
 
 - **For the organizer:** the household's work is visible in one place, and handing it out does not turn into chasing it.
 - **For a member:** what is yours is unambiguous, and finishing it is visible without having to announce it.
+
+A member sees their own work rather than the household's whole list — see [[decisions/0003-a-member-sees-only-their-own-tasks]].
 
 ## Further reading
 
