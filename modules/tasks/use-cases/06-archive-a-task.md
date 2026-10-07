@@ -1,6 +1,6 @@
 ---
 status: draft
-updated: 2026-10-06
+updated: 2026-10-07
 superseded-by:
 ---
 
@@ -59,4 +59,5 @@ As a member who can see a started task that is no longer needed, I want to end i
 - [[rules#a-task-moves-in-one-direction]] — `Archived` is reachable only from `Started`
 - [[rules#archiving-ends-a-task-that-was-started]] — only a started task is archived, and it is kept for what it holds
 - [[rules#who-can-end-a-task]] — who may do it
+- [[rules#a-minor-sees-their-own-work-in-full]] — a minor archives a started task of theirs, the same as a member
 - [[rules#an-organizer-cannot-act-on-the-owners-work]] — an organizer stops at the owner

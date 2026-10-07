@@ -30,6 +30,11 @@ As a member with organizer authority, I want to remove a member so that the hous
 
 1. Step 2 and step 3 are skipped.
 
+### The member is a minor
+
+1. The flow is the same, with no extra step.
+2. This is the only way a minor leaves a household. A minor cannot leave on their own. See [[09-leave-a-household]].
+
 ### The actor discards the lot
 
 1. The system archives every `Started` task and deletes every `Open` one.
@@ -66,11 +71,12 @@ As a member with organizer authority, I want to remove a member so that the hous
 | Owner | Every member, and the active tasks each one is on | Remove any member except themselves, and resolve their tasks in the same step |
 | Organizer | Every member, and the active tasks each one is on | Remove any member who is neither the owner nor an organizer, and resolve their tasks in the same step |
 | Member | That they are no longer in the household | Nothing. To go, they leave. See [[09-leave-a-household]] |
-| Minor member | That they are no longer in the household | Nothing |
+| Minor member | That they are no longer in the household | Nothing. This use case is the only way a minor leaves |
 
 ## Applied business rules
 
 - [[rules#the-owner-and-the-organizers-decide-who-belongs]] — removal is theirs, and an organizer cannot reach the owner or a peer
+- [[rules#a-minor-cannot-take-themselves-out-of-a-household]] — a minor goes out by this use case and no other
 - [[rules#a-household-has-exactly-one-owner-always]] — the owner cannot be removed
 - [[rules#a-former-member-stays-on-what-they-left-behind]] — the record of what they did is not rewritten
 - [[rules#an-active-task-of-a-former-member-waits-for-organizer-authority]] — the remover may resolve now or leave it for later

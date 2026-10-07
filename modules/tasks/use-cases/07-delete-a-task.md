@@ -1,6 +1,6 @@
 ---
 status: draft
-updated: 2026-10-06
+updated: 2026-10-07
 superseded-by:
 ---
 
@@ -62,5 +62,6 @@ As the requester of a task nobody has begun, or as the owner or an organizer, I 
 ## Applied business rules
 
 - [[rules#who-can-end-a-task]] — the requester before it starts, the owner and organizers at any time
+- [[rules#a-minor-sees-their-own-work-in-full]] — a minor deletes a task they requested while it is still `Open`, the same as a member
 - [[rules#archiving-ends-a-task-that-was-started]] — once started, the way out is archiving
 - [[rules#an-organizer-cannot-act-on-the-owners-work]] — an organizer stops at the owner

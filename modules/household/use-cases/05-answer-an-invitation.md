@@ -1,6 +1,6 @@
 ---
 status: draft
-updated: 2026-10-06
+updated: 2026-10-07
 superseded-by:
 ---
 
@@ -48,7 +48,7 @@ As an invited person, I want to accept or decline so that I join the household o
 ## Post-conditions
 
 - The invitation is `Accepted` or `Declined`, and cannot be answered again
-- On accept, the person is a member of the household, with the plain member role
+- On accept, the person is a member of the household, holding the role the invitation named: a plain member, or a minor member
 
 ## By role
 

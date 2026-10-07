@@ -45,6 +45,7 @@ A task whose requester or executor has left the household keeps them. See [[hous
 - An `Open` or `Started` task with a former member on it is **unresolved**, and waits
 - Only a member with organizer authority resolves it: reassign it, archive it, or delete it
 - Resolving all of them at once archives every `Started` task and deletes every `Open` one
+- A minor is not told that a task of theirs is unresolved. The task stays in their list, unchanged, until somebody with organizer authority resolves it. Waiting on an adult decision is the household's business, not the child's
 
 ## A task is visible to its requester, its executor, the owner and every organizer
 
@@ -52,6 +53,19 @@ A task whose requester or executor has left the household keeps them. See [[hous
 - The requester sees it, even when somebody else is the executor
 - The owner and every organizer see every task in the household
 - No other member sees it
+
+## A minor sees their own work in full
+
+The minor role takes nothing away from the work. What it reduces is the household — see [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]].
+
+- A minor sees the same tasks as a plain member: the ones where they are the requester or the executor
+- A minor sees who requested the task, who will do it, which state it is in, and every comment on it
+- A minor creates, edits, starts, closes, comments on, archives and deletes exactly as a plain member does
+- A minor asks any member for work, including an adult. **Any member can request work from any member** holds with no exception for a minor
+- A minor sees their closed and archived tasks, which are the record of what they have done
+- The one thing a minor does not see is that a task of theirs is **unresolved**
+
+Where a minor names another member — choosing an executor, for example — they are shown names and not roles. See [[household/rules#a-minor-does-not-see-who-runs-the-household]].
 
 ## Archiving ends a task that was started
 

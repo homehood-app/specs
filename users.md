@@ -76,12 +76,14 @@ There is no minor owner and no minor organizer. A minor who grows up changes rol
 
 **Can:**
 
-- Everything a member can
+- Everything a member can: manage their own work, and ask any member for work. Nothing is taken away there
 
 **Cannot:**
 
 - Everything a member cannot
+- See who holds authority in the household: which member is the owner, and which members are organizers
+- Take themselves out of a household. A member with organizer authority does it
 
-**Distinguishing characteristics:** Does what a member does and sees less of it — less on screen, for the same actions.
+**Distinguishing characteristics:** A member's authority over their own work, and no sight of how the household is run. The only role that cannot end its own membership.
 
-**Not yet decided:** exactly what is reduced, and whether it changes with age. Until that is decided, a use case that narrows what a minor sees must say what it hides.
+The reduction is on the household, not on the work — see [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]]. It does not change with age: one minor role covers every age, and a child who is ready becomes a plain member by a role change — see [[decisions/0007-one-minor-role-at-every-age]].

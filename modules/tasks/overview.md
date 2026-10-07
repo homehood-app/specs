@@ -9,7 +9,7 @@ This is the module the product exists for. A household with no tasks answers no 
 - [[users#owner]] — sees every task in the household, and can act on any of them
 - [[users#organizer]] — sees every task in the household, and can act on the work of any member who is not the owner
 - [[users#member]] — asks for tasks, does tasks, and sees only the tasks that concern them
-- [[users#minor-member]] — a member under the care of the household
+- [[users#minor-member]] — a member under the care of the household, with a plain member's authority over the work and nothing taken away
 
 ## Responsibilities
 

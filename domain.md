@@ -40,7 +40,9 @@ An organizer manages members and tasks. An organizer cannot act on the owner, an
 
 The lowest role. A member under the care of the household — in a family, a child.
 
-A minor does what a plain member does and sees less of it. What is reduced is not specified yet.
+A minor does what a plain member does over the work, with nothing taken away. What is reduced is the household: a minor does not see who the owner is, does not see which members are organizers, and cannot take themselves out of a household — see [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]].
+
+The role does not change with age. A child who is ready for more becomes a plain member, by a role change — see [[decisions/0007-one-minor-role-at-every-age]].
 
 There is no minor owner and no minor organizer. A minor who grows into either stops being a minor, by a role change — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
 

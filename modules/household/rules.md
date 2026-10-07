@@ -5,11 +5,24 @@
 - The owner can act on any member
 - An organizer can act on any member who is neither the owner nor another organizer
 - A member can act on nobody but themselves
-- A minor can act on nobody but themselves
+- A minor can act on nobody, not even themselves. A minor cannot end their own membership
 
 **Organizer authority** is the shorthand for "an organizer or the owner". The owner does everything an organizer does, so a household always has at least one member with organizer authority.
 
 This rule is about acting on *people*. Asking another member for work is not acting on them — see [[tasks/rules#any-member-can-request-work-from-any-member]].
+
+## A minor does not see who runs the household
+
+A minor sees the people of the household. A minor does not see the ladder they stand on. See [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]].
+
+- A minor sees every member of the household by name
+- A minor does not see which member is the owner
+- A minor does not see which members are organizers
+- A minor sees their own role, and no other member's role
+- Where a minor chooses a member — naming the executor of a task, for example — they are shown names, not roles
+- Everything the household already keeps from a plain member stays hidden from a minor as well: invitations, role changes and removals
+
+This hides the information, not the people. A minor still sees who asked for a task and who will do it, because that is the work and not the household — see [[tasks/rules#a-minor-sees-their-own-work-in-full]].
 
 ## Only the owner changes the household itself
 
@@ -35,6 +48,15 @@ There is no other way into a household.
 
 - The owner cannot leave or be removed while they are the owner
 - To leave, the owner hands ownership to another member first, or deletes the household
+
+## A minor cannot take themselves out of a household
+
+Leaving a home is not a child's act. See [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]].
+
+- A member and an organizer each end their own membership, whenever they want — see [[use-cases/09-leave-a-household]]
+- A minor cannot. A member with organizer authority removes them — see [[use-cases/08-remove-a-member]]
+- Removal is the only way a minor leaves a household, and it carries the same decision about their active tasks as any other removal
+- A minor who becomes a plain member can leave on their own from that moment
 
 ## A former member stays on what they left behind
 

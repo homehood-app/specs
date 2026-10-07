@@ -10,6 +10,8 @@ Numbers are sequential and never reused.
 
 | № | Decision | Date | Status |
 | --- | --- | --- | --- |
+| 0007 | [[0007-one-minor-role-at-every-age]] | 2026-10-07 | accepted |
+| 0006 | [[0006-a-minor-is-reduced-on-the-household-not-on-the-work]] | 2026-10-07 | accepted |
 | 0005 | [[0005-an-active-task-of-a-former-member-waits]] | 2026-10-07 | accepted |
 | 0004 | [[0004-four-roles-owner-organizer-member-minor]] | 2026-10-07 | accepted |
 | 0003 | [[0003-a-member-sees-only-their-own-tasks]] | 2026-10-06 | accepted |

@@ -83,7 +83,7 @@ Record a decision when the choice shapes the product and someone will ask "why i
 
 Decision records are **append-only**. Never edit a record to change the outcome. To reverse a decision, write a new record, set `supersedes` on the new record, and set `superseded-by` on the old one.
 
-Numbers are sequential and never reused: `0005-minors-cannot-delete-a-task.md`.
+Numbers are sequential and never reused: `0007-one-minor-role-at-every-age.md`.
 
 ## Workflow
 
