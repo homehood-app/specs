@@ -66,6 +66,7 @@ A task whose requester or executor has left the household keeps them. See [[hous
 - The requester can delete a task that has not been started
 - The owner and any organizer can delete any task in the household
 - The executor, the requester, the owner and any organizer can archive a started task
+- A routine deletes its own waiting task when the next one is due, and when it is ended. It never deletes one that was started. See [[routine/rules#a-routine-never-has-two-occurrences-waiting]]
 - Deleting removes the task and everything attached to it
 
 ## An organizer cannot act on the owner's work
