@@ -36,10 +36,11 @@ As {{actor}}, I want {{action}} so that {{outcome}}.
 
 ## By role
 
-Required. What each role sees and can do in this use case. If behavior changes with a minor's age, split the row and name the age band. Write `Nothing.` where a role has no view and no action.
+Required. What each role sees and can do in this use case. If behavior changes for a minor, add a row and say what is different. Write `Nothing.` where a role has no view and no action.
 
 | Role | Sees | Can do |
 | --- | --- | --- |
+| Owner | | |
 | Organizer | | |
 | Member | | |
 | Minor member | | |

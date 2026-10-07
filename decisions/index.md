@@ -10,6 +10,10 @@ Numbers are sequential and never reused.
 
 | № | Decision | Date | Status |
 | --- | --- | --- | --- |
-| 0001 | [[0001-household-and-two-member-roles]] | 2026-10-06 | accepted |
+| 0005 | [[0005-an-active-task-of-a-former-member-waits]] | 2026-10-07 | accepted |
+| 0004 | [[0004-four-roles-owner-organizer-member-minor]] | 2026-10-07 | accepted |
+| 0003 | [[0003-a-member-sees-only-their-own-tasks]] | 2026-10-06 | accepted |
+| 0002 | [[0002-any-member-can-give-work-to-another]] | 2026-10-06 | accepted |
+| 0001 | [[0001-household-and-two-member-roles]] | 2026-10-06 | superseded by 0004 |
 
 Use [[templates/decision]] for a new record.

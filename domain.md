@@ -8,33 +8,61 @@ Use these words. Do not introduce a synonym for a term that already exists here.
 
 The group of people who share a home and coordinate their routine together. The household is the boundary of everything in Homehood: a task, an invitation and a member all belong to exactly one household.
 
-"Household" covers a family, a flat share, or any other group under one roof. We do not say "family" for this concept, even though families are the main audience — see [[decisions/0001-household-and-two-member-roles]].
+"Household" covers a family, a flat share, or any other group under one roof. We do not say "family" for this concept, even though families are the main audience — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
+
+A person can belong to several households at the same time. Nothing stops it.
 
 ## Member
 
 A person who belongs to a household. A member joins by accepting an invitation.
 
+Every member holds exactly one role: owner, organizer, member or minor.
+
+## Former member
+
+A person who was a member of a household and is not any more. A former member sees nothing of the household.
+
+The household keeps them on what they left behind. A task they requested or executed still names them, and so does every comment they wrote. A record of what happened is not rewritten because somebody left.
+
+## Owner
+
+The member who holds the household. Exactly one per household, and the household cannot exist without one.
+
+The owner is the only member who can change the household itself — its data, its ownership and its existence. The owner can do everything an organizer can do, and the owner is the only member no organizer can act upon.
+
 ## Organizer
 
-A member who administers the household. An organizer invites people, removes them, and assigns work to other members. A household has at least one organizer.
+A member who runs the household's day-to-day on the owner's behalf. A household can have any number of organizers, including none.
 
-Organizer is a permission level, not an age. In a family the parents are usually the organizers. In a flat share it may be one person, or everyone.
+An organizer manages members and tasks. An organizer cannot act on the owner, and cannot remove another organizer.
 
 ## Minor
 
-A member who is under the care of an organizer — in a family, a child. Minor is a property of a member, not a separate permission level, so a household with no minors (a flat share) needs no extra concepts.
+The lowest role. A member under the care of the household — in a family, a child.
 
-Where behavior differs for a minor, the use case says so explicitly in its **By role** section.
+A minor does what a plain member does and sees less of it. What is reduced is not specified yet.
+
+There is no minor owner and no minor organizer. A minor who grows into either stops being a minor, by a role change — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
 
 ## Invitation
 
-An offer from an organizer to a person to become a member of a household. A person is not a member until the invitation is accepted.
+An offer from an owner or an organizer to a person, to become a member of a household. A person is not a member until the invitation is accepted.
 
 ## Task
 
-One piece of the household's work, with one owner and one state. A task is the unit everything else attaches to: a comment belongs to a task, and responsibility is expressed by owning a task.
+One piece of the household's work. A task is the unit everything else attaches to: a comment belongs to a task, and responsibility is expressed by the two people attached to it.
 
 The everyday word for a household task is "chore". In the spec we always say **task**.
+
+## Requester
+
+The member who asked for the task. The requester wants the work done, and is not necessarily the person who will do it.
+
+## Executor
+
+The member who will do the task. Exactly one per task.
+
+The requester and the executor are often the same person — someone opening a task for themselves is both.
 
 ## Task state
 
@@ -42,10 +70,14 @@ A task is in exactly one state at a time:
 
 | State | Meaning |
 | --- | --- |
-| Open | Created, not being worked on |
-| Started | Someone is working on it now |
+| Open | Asked for, not begun |
+| Started | The executor is working on it |
 | Closed | The work is finished |
-| Archived | Kept for the record, out of the active lists |
+| Archived | It was begun and will not be finished. Kept for what it holds |
+
+`Archived` is not "tidied away". It is the end of a task that was started and then stopped, because it was cancelled or is no longer needed. We keep it instead of deleting it because by then it carries history — comments, who started it, when.
+
+A task that was never started and is no longer needed is deleted, not archived. There is nothing in it worth keeping.
 
 Deleting a task removes it. Deleting is not a state.
 

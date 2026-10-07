@@ -1,61 +1,87 @@
 # Users
 
-The people who use Homehood, and the authority each one has.
+The people who use Homehood, and the authority each one holds.
 
 **Scope of this file.** It says who the users are and what authority each one holds across the whole product. It does not say what a user may do in one area of the product. "Who can create a task", "who can close a task", "who sees another member's work" belong in that module's `rules.md` and in the **By role** section of its use cases — not here. See the **By role** section in [[templates/module/use-cases/use-case]].
 
-The names come from [[domain]]. Organizer and member are levels of authority; minor is a property of a member. See [[decisions/0001-household-and-two-member-roles]].
+The names come from [[domain]]. Owner, organizer, member and minor are the four roles, in that order of authority. See [[decisions/0004-four-roles-owner-organizer-member-minor]].
 
-## Organizer
+## Owner
 
-The member who administers the household. In a family, usually a parent. In a flat share, one person or everyone.
+The member who holds the household. Exactly one per household. In a family, usually a parent. In a flat share, whoever set it up.
 
-**Access:** Creates the household, or is promoted by another organizer.
+**Access:** Creates the household, or receives ownership from the previous owner.
 
 **Can:**
 
-- Decide who belongs to the household
-- Act with authority over another member's work
+- Everything an organizer can
+- Change the household itself: its data, its ownership, its existence
+- Act on any member, including an organizer
 
 **Cannot:**
 
 - Act in a household they do not belong to
+- Stop being the owner without handing ownership to another member
+- Do another member's work for them
 
-**Distinguishing characteristics:** The only role that can change who is in the household, and the only one with authority over another member.
+**Distinguishing characteristics:** The only member who can change the household itself, and the only member no one else can act upon.
+
+## Organizer
+
+A member who runs the household's day-to-day. Any number per household, including none.
+
+**Access:** Promoted by the owner.
+
+**Can:**
+
+- Everything a member can
+- Decide who belongs to the household, apart from the owner
+- See everything in the household
+- Act on the work of any member who is not the owner
+
+**Cannot:**
+
+- Change the household itself
+- Act on the owner
+- Remove another organizer
+
+**Distinguishing characteristics:** Full authority over the household's people and work, and none over the household itself or over a peer.
 
 ## Member
 
-An adult who belongs to the household but does not administer it. In a flat share, a housemate who is not the organizer.
+A person who belongs to the household and runs their own part of it.
 
 **Access:** Joins by accepting an invitation.
 
 **Can:**
 
-- Take part in the household's routine
 - Manage their own work
+- Ask another member for work
 
 **Cannot:**
 
 - Change who belongs to the household
-- Act with authority over another member
+- See what does not concern them
+- Act on another member's work
 
-**Distinguishing characteristics:** Full authority over their own work, none over anyone else's.
+**Distinguishing characteristics:** Can ask anything of anybody, but sees only what concerns them and acts only on their own work.
 
 ## Minor member
 
-A member under the care of an organizer — in a family, a child. A flat share has none.
+The lowest role. A member under the care of the household — in a family, a child. A flat share has none.
 
-**Access:** Joins by accepting an invitation, or is added by an organizer.
+There is no minor owner and no minor organizer. A minor who grows up changes role.
+
+**Access:** Joins by accepting an invitation, invited as a minor.
 
 **Can:**
 
-- Take part in the household's routine as a member
+- Everything a member can
 
 **Cannot:**
 
-- Change who belongs to the household
-- Act with authority over another member
+- Everything a member cannot
 
-**Distinguishing characteristics:** The only user whose view or actions may be narrowed on account of care rather than authority.
+**Distinguishing characteristics:** Does what a member does and sees less of it — less on screen, for the same actions.
 
-**Not yet decided:** whether a minor's authority differs by age, and if so which age bands. Until that is decided, a use case that narrows what a minor can do must say which ages it applies to.
+**Not yet decided:** exactly what is reduced, and whether it changes with age. Until that is decided, a use case that narrows what a minor sees must say what it hides.
