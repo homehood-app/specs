@@ -15,11 +15,12 @@ As the owner, I want to promote or demote a member so that the people who run th
 - The household exists
 - The actor is its owner
 - The person is a member of it, and is not the owner
+- The person holds a full account. A minor's role never changes
 
 ## Main flow
 
 1. The owner selects a member.
-2. The owner sets their role: organizer, member or minor.
+2. The owner sets their role to organizer or to member.
 3. The system applies the new role at once.
 
 ## Alternative flows
@@ -34,21 +35,11 @@ As the owner, I want to promote or demote a member so that the people who run th
 1. They lose sight of the household's other work at once, keeping only what concerns them.
 2. The tasks where they are the requester or the executor are untouched.
 
-### A minor becomes a plain member
+### The household wants to give a child more
 
-1. This is how a child who has grown up gets the rest of the product. There is no other mechanism, and nothing happens by age — see [[decisions/0007-one-minor-role-at-every-age]].
-2. They now see who the owner is and which members are organizers, and they can leave the household on their own.
-3. Their tasks are untouched. Nothing about their own work changes, because a minor already had a member's authority over it.
-
-### A plain member becomes a minor
-
-1. The reverse of the same act. They stop seeing who runs the household, and can no longer leave on their own.
-2. Their tasks are untouched.
-
-### A minor is made an organizer
-
-1. They are an organizer, and are not a minor any more. There is no minor organizer and no minor owner — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
-2. The owner is choosing to say this person is no longer a child in the household. One act, one role.
+1. A minor's role cannot change, and a minor account is never made a full one — see [[decisions/0007-no-age-and-no-conversion-of-a-minor-account]].
+2. The child signs up for a full account of their own, a member with organizer authority invites them, and they accept as a member. See [[03-invite-a-person]] and [[05-answer-an-invitation]].
+3. The household then removes the minor account. See [[08-remove-a-member]]. The work the minor account did stays on it, as it does for any former member.
 
 ## Exception flows
 
@@ -62,6 +53,11 @@ As the owner, I want to promote or demote a member so that the people who run th
 1. The system refuses and says the owner's role is changed by handing ownership on. See [[07-transfer-ownership]].
 2. Nothing changes.
 
+### The target holds a minor account
+
+1. The system refuses and says a minor is always a member.
+2. Nothing changes. A minor is never promoted, and there is no way to make a minor account a full one.
+
 ## Post-conditions
 
 - The member holds the new role
@@ -72,13 +68,13 @@ As the owner, I want to promote or demote a member so that the people who run th
 
 | Role | Sees | Can do |
 | --- | --- | --- |
-| Owner | Every member and their role | Set any other member's role: organizer, member or minor |
+| Owner | Every member and their role | Promote any member with a full account to organizer, or demote any organizer to member |
 | Organizer | Every member and their role | Nothing. An organizer cannot make or unmake a peer |
-| Member | Their own role, and who the owner is | Nothing |
-| Minor member | Their own role, and no other member's role | Nothing |
+| Member | Their own role | Nothing |
+| Minor | Their own role | Nothing. A minor's role never changes |
 
 ## Applied business rules
 
 - [[rules#only-the-owner-changes-the-household-itself]] — a role change is the owner's alone
-- [[rules#authority-over-members-runs-owner-organizer-member-minor]] — what the new role can do
-- [[rules#a-minor-does-not-see-who-runs-the-household]] — a minor sees their own role and nobody else's, so a promotion elsewhere is invisible to them
+- [[rules#authority-over-members-runs-owner-organizer-member]] — what the new role can do
+- [[rules#a-minor-is-a-member-and-stays-a-member]] — a minor is never promoted, and never converted

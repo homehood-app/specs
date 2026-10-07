@@ -4,7 +4,9 @@ The people who use Homehood, and the authority each one holds.
 
 **Scope of this file.** It says who the users are and what authority each one holds across the whole product. It does not say what a user may do in one area of the product. "Who can create a task", "who can close a task", "who sees another member's work" belong in that module's `rules.md` and in the **By role** section of its use cases — not here. See the **By role** section in [[templates/module/use-cases/use-case]].
 
-The names come from [[domain]]. Owner, organizer, member and minor are the four roles, in that order of authority. See [[decisions/0004-four-roles-owner-organizer-member-minor]].
+The names come from [[domain]]. Owner, organizer and member are the three roles, in that order of authority.
+
+**Minor is not a role.** It is a kind of account, held by a child the household made it for, and it always carries the member role. It has a persona here because it is a person the product has to serve, not because it is a rung on the ladder. See [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
 ## Owner
 
@@ -66,24 +68,27 @@ A person who belongs to the household and runs their own part of it.
 
 **Distinguishing characteristics:** Can ask anything of anybody, but sees only what concerns them and acts only on their own work.
 
-## Minor member
+## Minor
 
-The lowest role. A member under the care of the household — in a family, a child. A flat share has none.
+A child of the household, holding an account the household made for them. In a family, a son or a daughter. A flat share has none.
 
-There is no minor owner and no minor organizer. A minor who grows up changes role.
+A minor is a member. The difference is not what they may do inside the household — it is the account.
 
-**Access:** Joins by accepting an invitation, invited as a minor.
+**Access:** A member with organizer authority creates the account inside the household, and the child is a member from that moment. There is no invitation and nothing to accept. The account needs no email address of its own. How it is created, and how a child signs in, is not specified yet.
 
 **Can:**
 
-- Everything a member can: manage their own work, and ask any member for work. Nothing is taken away there
+- Everything a member can, with nothing taken away: manage their own work, and ask any member for work
 
 **Cannot:**
 
 - Everything a member cannot
-- See who holds authority in the household: which member is the owner, and which members are organizers
-- Take themselves out of a household. A member with organizer authority does it
+- Belong to a second household
+- Take themselves out of the one they are in. A member with organizer authority does it
+- Hold the owner role, so they cannot create a household and cannot receive one
+- Hold the organizer role, so they are never promoted
+- Become a full account, at any age
 
-**Distinguishing characteristics:** A member's authority over their own work, and no sight of how the household is run. The only role that cannot end its own membership.
+**Distinguishing characteristics:** A member in every way that concerns the work, and the only member who did not choose to be here and cannot choose to leave.
 
-The reduction is on the household, not on the work — see [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]]. It does not change with age: one minor role covers every age, and a child who is ready becomes a plain member by a role change — see [[decisions/0007-one-minor-role-at-every-age]].
+A minor is an account kind rather than a role — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]]. Nothing about a minor changes with age, and a child who is ready for their own account signs up for a full one and is invited as a member — see [[decisions/0007-no-age-and-no-conversion-of-a-minor-account]].

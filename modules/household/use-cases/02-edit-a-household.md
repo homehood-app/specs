@@ -49,7 +49,7 @@ None.
 | Owner | The household data | Change it |
 | Organizer | The household data | Nothing. Running the household is not changing it |
 | Member | The household data | Nothing |
-| Minor member | The household data | Nothing |
+| Minor | The household data | Nothing |
 
 ## Applied business rules
 

@@ -8,7 +8,7 @@ superseded-by:
 
 As a member, I want to ask for a piece of work so that it has somebody attached to it.
 
-**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor-member]]
+**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor]]
 
 ## Pre-conditions
 
@@ -57,11 +57,11 @@ As a member, I want to ask for a piece of work so that it has somebody attached 
 | Owner | Every task in the household | Create a task with any member as the executor |
 | Organizer | Every task in the household | Create a task with any member as the executor |
 | Member | The tasks where they are the requester or the executor | Create a task with any member as the executor |
-| Minor member | The tasks where they are the requester or the executor | Create a task with any member as the executor |
+| Minor | The tasks where they are the requester or the executor | Create a task with any member as the executor |
 
 ## Applied business rules
 
 - [[rules#any-member-can-request-work-from-any-member]] — asking somebody else is not reserved to a role
-- [[rules#a-minor-sees-their-own-work-in-full]] — a minor asks any member, including an adult, and is shown names rather than roles when choosing one
+- [[rules#a-minor-works-like-any-other-member]] — a minor asks any member, including an adult
 - [[rules#every-task-has-a-requester-and-an-executor]] — one of each, fixed at creation
 - [[rules#a-task-is-visible-to-its-requester-its-executor-the-owner-and-every-organizer]] — who can see it from now on

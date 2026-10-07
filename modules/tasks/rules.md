@@ -16,7 +16,7 @@ Asking is not an act of authority. See [[decisions/0002-any-member-can-give-work
 
 - Any member can create a task with themselves as the executor
 - Any member can create a task with any other member as the executor
-- A minor member can do both
+- A minor can do both
 
 ## The executor works the task
 
@@ -45,7 +45,6 @@ A task whose requester or executor has left the household keeps them. See [[hous
 - An `Open` or `Started` task with a former member on it is **unresolved**, and waits
 - Only a member with organizer authority resolves it: reassign it, archive it, or delete it
 - Resolving all of them at once archives every `Started` task and deletes every `Open` one
-- A minor is not told that a task of theirs is unresolved. The task stays in their list, unchanged, until somebody with organizer authority resolves it. Waiting on an adult decision is the household's business, not the child's
 
 ## A task is visible to its requester, its executor, the owner and every organizer
 
@@ -54,18 +53,17 @@ A task whose requester or executor has left the household keeps them. See [[hous
 - The owner and every organizer see every task in the household
 - No other member sees it
 
-## A minor sees their own work in full
+## A minor works like any other member
 
-The minor role takes nothing away from the work. What it reduces is the household — see [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]].
+This module makes no distinction for a minor. Minor is a kind of account, not a role, and it takes nothing away from the work — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
-- A minor sees the same tasks as a plain member: the ones where they are the requester or the executor
+- Every rule in this module that says "member" includes a minor
+- A minor sees the same tasks as any member: the ones where they are the requester or the executor
 - A minor sees who requested the task, who will do it, which state it is in, and every comment on it
-- A minor creates, edits, starts, closes, comments on, archives and deletes exactly as a plain member does
+- A minor creates, edits, starts, closes, comments on, archives and deletes exactly as a member does
 - A minor asks any member for work, including an adult. **Any member can request work from any member** holds with no exception for a minor
-- A minor sees their closed and archived tasks, which are the record of what they have done
-- The one thing a minor does not see is that a task of theirs is **unresolved**
 
-Where a minor names another member — choosing an executor, for example — they are shown names and not roles. See [[household/rules#a-minor-does-not-see-who-runs-the-household]].
+The **Minor** row of a **By role** table in this module says the same as the **Member** row. The row is there so that a reader can see it was answered, not forgotten.
 
 ## Archiving ends a task that was started
 
@@ -84,7 +82,7 @@ Where a minor names another member — choosing an executor, for example — the
 
 ## An organizer cannot act on the owner's work
 
-Mirrors [[household/rules#authority-over-members-runs-owner-organizer-member-minor]]. Authority over a member's work stops at the owner.
+Mirrors [[household/rules#authority-over-members-runs-owner-organizer-member]]. Authority over a member's work stops at the owner.
 
 - An organizer can edit, archive or delete the task of any member who is not the owner
 - A task whose executor is the owner can be acted on by the owner alone

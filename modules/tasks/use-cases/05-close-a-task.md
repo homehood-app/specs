@@ -8,7 +8,7 @@ superseded-by:
 
 As the executor of a task, I want to say the work is finished so that nobody has to ask.
 
-**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor-member]]
+**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor]]
 
 ## Pre-conditions
 
@@ -55,7 +55,7 @@ None.
 | Owner | Every task in the household, and which are closed | Close a started task only when they are its executor |
 | Organizer | Every task in the household, and which are closed | Close a started task only when they are its executor |
 | Member | The tasks where they are the requester or the executor | Close a started task they are the executor of |
-| Minor member | The tasks where they are the requester or the executor | Close a started task they are the executor of |
+| Minor | The tasks where they are the requester or the executor | Close a started task they are the executor of |
 
 ## Applied business rules
 

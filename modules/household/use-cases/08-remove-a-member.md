@@ -32,8 +32,10 @@ As a member with organizer authority, I want to remove a member so that the hous
 
 ### The member is a minor
 
-1. The flow is the same, with no extra step.
+1. The flow is the same, with one consequence: a minor account cannot exist outside a household, so the account ends with the membership.
 2. This is the only way a minor leaves a household. A minor cannot leave on their own. See [[09-leave-a-household]].
+3. The system says so before step 4. Removing a minor is not the same as removing a member who keeps their account and their other households.
+4. What the child did stays on the household's record, as it does for any former member.
 
 ### The actor discards the lot
 
@@ -59,6 +61,7 @@ As a member with organizer authority, I want to remove a member so that the hous
 ## Post-conditions
 
 - The person is a former member, and sees nothing of the household
+- A removed minor's account no longer exists. A removed member with a full account keeps it, and keeps every other household they belong to
 - Every active task the actor resolved has a current member on it, or is archived, or is gone
 - Every active task the actor did not resolve is unresolved, and waiting
 - The person's closed and archived tasks still name them, and are unchanged
@@ -71,12 +74,12 @@ As a member with organizer authority, I want to remove a member so that the hous
 | Owner | Every member, and the active tasks each one is on | Remove any member except themselves, and resolve their tasks in the same step |
 | Organizer | Every member, and the active tasks each one is on | Remove any member who is neither the owner nor an organizer, and resolve their tasks in the same step |
 | Member | That they are no longer in the household | Nothing. To go, they leave. See [[09-leave-a-household]] |
-| Minor member | That they are no longer in the household | Nothing. This use case is the only way a minor leaves |
+| Minor | That they are no longer in the household | Nothing. This use case is the only way a minor leaves, and their account ends with it |
 
 ## Applied business rules
 
 - [[rules#the-owner-and-the-organizers-decide-who-belongs]] — removal is theirs, and an organizer cannot reach the owner or a peer
-- [[rules#a-minor-cannot-take-themselves-out-of-a-household]] — a minor goes out by this use case and no other
+- [[rules#a-minor-belongs-to-one-household-and-cannot-leave-it]] — a minor goes out by this use case and no other, and the account ends with the membership
 - [[rules#a-household-has-exactly-one-owner-always]] — the owner cannot be removed
 - [[rules#a-former-member-stays-on-what-they-left-behind]] — the record of what they did is not rewritten
 - [[rules#an-active-task-of-a-former-member-waits-for-organizer-authority]] — the remover may resolve now or leave it for later

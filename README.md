@@ -59,7 +59,7 @@ If you are not sure whether an area deserves its own module, ask: can you explai
 
 ## Use cases: the By role section
 
-Every use case must fill a **By role** section saying what an owner, an organizer, a member and a minor member each see and can do.
+Every use case must fill a **By role** section saying what an owner, an organizer, a member and a minor each see and can do. The first three are the household roles; a minor is a kind of account that always holds the member role, and it keeps a row so the case is never forgotten.
 
 It is required because Homehood is a product with several roles in one household, and we get the roles wrong by default when the section is optional.
 
@@ -83,7 +83,7 @@ Record a decision when the choice shapes the product and someone will ask "why i
 
 Decision records are **append-only**. Never edit a record to change the outcome. To reverse a decision, write a new record, set `supersedes` on the new record, and set `superseded-by` on the old one.
 
-Numbers are sequential and never reused: `0007-one-minor-role-at-every-age.md`.
+Numbers are sequential and never reused: `0007-no-age-and-no-conversion-of-a-minor-account.md`.
 
 ## Workflow
 
@@ -97,7 +97,7 @@ Numbers are sequential and never reused: `0007-one-minor-role-at-every-age.md`.
 ### Review a spec
 
 - Make sure every requirement can be tested.
-- Make sure the **By role** section is filled, with a row per role.
+- Make sure the **By role** section is filled, with all four rows: owner, organizer, member, minor.
 - Ask questions in the pull request comments.
 - Merge when the team agrees.
 

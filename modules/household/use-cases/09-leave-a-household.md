@@ -45,8 +45,7 @@ As a member, I want to take myself out of a household so that I am not in a home
 ### The actor is a minor
 
 1. The system refuses and says a minor is taken out of the household by the owner or an organizer. See [[08-remove-a-member]].
-2. Nothing changes.
-3. A minor who has become a plain member leaves by this use case like anybody else.
+2. Nothing changes. There is no path that lets a minor leave by themselves later: a minor stays a minor.
 
 ## Post-conditions
 
@@ -63,11 +62,11 @@ As a member, I want to take myself out of a household so that I am not in a home
 | Owner | The households they belong to | Nothing here. Hand the household on first, then leave as an organizer |
 | Organizer | The households they belong to, and how many active tasks they are on | Leave. They do not choose where their tasks go |
 | Member | The households they belong to, and how many active tasks they are on | Leave. They do not choose where their tasks go |
-| Minor member | The households they belong to | Nothing. A minor cannot leave on their own. See [[08-remove-a-member]] |
+| Minor | The one household they belong to | Nothing. A minor cannot leave on their own. See [[08-remove-a-member]] |
 
 ## Applied business rules
 
 - [[rules#a-household-has-exactly-one-owner-always]] — the owner cannot leave while they hold the household
-- [[rules#a-minor-cannot-take-themselves-out-of-a-household]] — a minor is refused here, and removed instead
+- [[rules#a-minor-belongs-to-one-household-and-cannot-leave-it]] — a minor is refused here, and removed instead
 - [[rules#a-former-member-stays-on-what-they-left-behind]] — the record of what they did is not rewritten
 - [[rules#an-active-task-of-a-former-member-waits-for-organizer-authority]] — the leaver does not redistribute the household's work

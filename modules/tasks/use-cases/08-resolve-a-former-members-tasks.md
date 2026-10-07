@@ -61,9 +61,8 @@ As a member with organizer authority, I want to decide what happens to the activ
 
 ### A minor is on one of the unresolved tasks
 
-1. They see the task, and no sign that it is waiting.
-2. Nothing in their view changes while it waits, and nothing changes when it is resolved, unless the task itself changed.
-3. A minor whose task is reassigned to somebody else stops seeing it, like any member who is no longer on it.
+1. Nothing is different. A minor sees their unresolved task and that it waits, like any member.
+2. A minor whose task is given to somebody else stops seeing it, like any member who is no longer on it.
 
 ## Post-conditions
 
@@ -78,12 +77,12 @@ As a member with organizer authority, I want to decide what happens to the activ
 | --- | --- | --- |
 | Owner | Every unresolved task in the household | Give any of them to a member, archive a started one, delete any, or resolve all at once |
 | Organizer | Every unresolved task in the household | The same, except on a task where the owner is the requester or the executor |
-| Member | Only an unresolved task they are still on themselves, and that it waits | Nothing. Resolving is organizer authority |
-| Minor member | Only a task they are still on themselves, and not that it waits | Nothing |
+| Member | Only an unresolved task they are still on themselves | Nothing. Resolving is organizer authority |
+| Minor | Only an unresolved task they are still on themselves | Nothing |
 
 ## Applied business rules
 
-- [[rules#an-unresolved-task-is-a-task-with-a-former-member-on-it]] — what is unresolved, who resolves it, and that a minor is not told
-- [[rules#a-minor-sees-their-own-work-in-full]] — the task itself is not hidden from a minor, only the fact that it is waiting
+- [[rules#an-unresolved-task-is-a-task-with-a-former-member-on-it]] — what is unresolved, and who resolves it
+- [[rules#a-minor-works-like-any-other-member]] — a minor is on the list exactly as a member is
 - [[rules#a-task-moves-in-one-direction]] — a started task is archived, an open one is deleted
 - [[rules#an-organizer-cannot-act-on-the-owners-work]] — an organizer stops at the owner

@@ -39,7 +39,7 @@ As the owner, I want to hand the household to another member so that somebody el
 ### Every other member is a minor
 
 1. The system refuses for the same reason. A household of one adult and two children has nobody to hand the household to.
-2. Nothing changes. The owner invites an adult, or makes one of the children a plain member first.
+2. Nothing changes. The owner invites somebody with a full account first, or deletes the household. See [[10-delete-a-household]].
 
 ### The actor is not the owner
 
@@ -48,8 +48,8 @@ As the owner, I want to hand the household to another member so that somebody el
 
 ### The chosen member is a minor
 
-1. The system refuses and says a minor cannot hold the household. There is no minor owner — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
-2. Nothing changes. To hand the household to that person, the owner makes them a plain member or an organizer first. See [[06-change-a-members-role]].
+1. The system refuses and says a minor cannot hold the household — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
+2. Nothing changes, and there is no way to make that member eligible. A minor's role never changes.
 
 ## Post-conditions
 
@@ -65,10 +65,10 @@ As the owner, I want to hand the household to another member so that somebody el
 | Owner | Every member of the household | Hand the household to any other member, and become an organizer |
 | Organizer | Who the owner is | Nothing. An organizer cannot take the household |
 | Member | Who the owner is | Nothing. A member can receive the household but cannot ask for it |
-| Minor member | Nothing of this use case. A minor does not see who holds the household | Nothing. A minor cannot receive the household either |
+| Minor | Who the owner is | Nothing. A minor cannot receive the household |
 
 ## Applied business rules
 
 - [[rules#only-the-owner-changes-the-household-itself]] — handing the household on is the owner's alone
 - [[rules#a-household-has-exactly-one-owner-always]] — the household is never without an owner, not even for a moment
-- [[rules#a-minor-does-not-see-who-runs-the-household]] — the transfer happens, and a minor sees nothing move
+- [[rules#a-minor-is-a-member-and-stays-a-member]] — a minor cannot hold the owner role, so a minor is never the one chosen

@@ -4,7 +4,7 @@ Homehood is a routine manager for the people who share a home. It answers the tw
 
 A home coordinates in fragments today — a message in one chat, a note on the fridge, a reminder someone set on their own phone. None of it is shared, so the same two arguments repeat: nobody knew it was theirs, and nobody knew it was finished. Homehood puts the household's work in one place, and every piece of it carries somebody who asked, somebody who will do it, and a state.
 
-The main audience is families. It is not limited to them. Friends who share a flat, or any group of people under one roof who coordinate a daily routine, use the same product in the same way. The vocabulary in [[domain]] is deliberately neutral so that it fits both — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
+The main audience is families. It is not limited to them. Friends who share a flat, or any group of people under one roof who coordinate a daily routine, use the same product in the same way. The vocabulary in [[domain]] is deliberately neutral so that it fits both — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
 ## Business model
 

@@ -9,7 +9,7 @@ This module owns the boundary every other module depends on. A task, a comment a
 - [[users#owner]] — holds the household, and is the only member who can change it
 - [[users#organizer]] — runs the household's day-to-day membership
 - [[users#member]] — belongs to the household
-- [[users#minor-member]] — a member under the care of the household, who sees the people but not their roles
+- [[users#minor]] — a child of the household, holding an account it made for them. A member who cannot leave and cannot be promoted
 
 ## Responsibilities
 
@@ -19,11 +19,12 @@ This module owns the boundary every other module depends on. A task, a comment a
 - Changing a member's role
 - Removing a member, and leaving on your own
 - What becomes of a former member's tasks and comments
-- What a minor member sees of the household, and who takes a minor out of it
+- What a minor can and cannot do inside the household, and who takes a minor out of it
 
 ## Out of scope
 
-- Everything about the household's work. See [[tasks/overview]]. A minor's authority over the work is a member's, in full — see [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]].
+- Everything about the household's work. See [[tasks/overview]]. A minor's authority over the work is a member's, in full — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
+- How a minor account is created, and how a child signs in to it. The household is where a minor exists, but an account is not a household concept. Not specified yet.
 
 ## Related modules
 

@@ -8,15 +8,32 @@ Use these words. Do not introduce a synonym for a term that already exists here.
 
 The group of people who share a home and coordinate their routine together. The household is the boundary of everything in Homehood: a task, an invitation and a member all belong to exactly one household.
 
-"Household" covers a family, a flat share, or any other group under one roof. We do not say "family" for this concept, even though families are the main audience — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
+"Household" covers a family, a flat share, or any other group under one roof. We do not say "family" for this concept, even though families are the main audience — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
-A person can belong to several households at the same time. Nothing stops it.
+A person can belong to several households at the same time. Nothing stops it, unless they hold a minor account.
+
+## Account
+
+What a person signs in with. A full account exists outside any household: it is made before joining one and it survives leaving one. A minor account is the exception on both counts — the household makes it, and it ends with the membership.
+
+There are two kinds, and an account never changes kind — see [[decisions/0007-no-age-and-no-conversion-of-a-minor-account]].
+
+| Kind | Who holds it | How it begins |
+| --- | --- | --- |
+| Full account | Anybody who signs themselves up | The person creates it themselves |
+| Minor account | A child of one household | The household creates it for them |
+
+A full account is the ordinary one. It belongs to the person who made it, it can be a member of any number of households, and it can hold any role.
+
+A minor account is made for a child by the household they live in. It needs no email address of its own. It belongs to exactly one household, always holds the member role, and cannot be made a full account. How it is created, and how a child signs in to it, is not specified yet.
+
+We do not say "user" for this. The person is a **member** of a household; the thing they sign in with is an **account**.
 
 ## Member
 
-A person who belongs to a household. A member joins by accepting an invitation.
+A person who belongs to a household. A member joins by accepting an invitation, or is a minor the household created inside it.
 
-Every member holds exactly one role: owner, organizer, member or minor.
+Every member holds exactly one role: owner, organizer or member. A minor always holds the member role.
 
 ## Former member
 
@@ -38,17 +55,23 @@ An organizer manages members and tasks. An organizer cannot act on the owner, an
 
 ## Minor
 
-The lowest role. A member under the care of the household — in a family, a child.
+A member who holds a minor account — in a family, a child. Minor is not a role: it is what the account is. See [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
-A minor does what a plain member does over the work, with nothing taken away. What is reduced is the household: a minor does not see who the owner is, does not see which members are organizers, and cannot take themselves out of a household — see [[decisions/0006-a-minor-is-reduced-on-the-household-not-on-the-work]].
+A minor is a member and does everything a member does, with nothing taken away. Five things are true of a minor and of nobody else:
 
-The role does not change with age. A child who is ready for more becomes a plain member, by a role change — see [[decisions/0007-one-minor-role-at-every-age]].
+- They belong to exactly one household
+- They cannot leave it. Only a member with organizer authority takes them out
+- They cannot hold the owner role
+- They cannot hold the organizer role
+- They cannot become a full account, at any age — see [[decisions/0007-no-age-and-no-conversion-of-a-minor-account]]
 
-There is no minor owner and no minor organizer. A minor who grows into either stops being a minor, by a role change — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
+A flat share has no minors. A household with no children has none either.
 
 ## Invitation
 
 An offer from an owner or an organizer to a person, to become a member of a household. A person is not a member until the invitation is accepted.
+
+An invitation reaches a person through an account of their own, so a minor is never invited. A minor is created inside the household they belong to, and is a member from that moment.
 
 ## Task
 

@@ -1,9 +1,9 @@
 ---
 decision: 0004
 date: 2026-10-07
-status: accepted
+status: superseded
 supersedes: 0001-household-and-two-member-roles
-superseded-by:
+superseded-by: 0006-a-minor-is-an-account-kind-not-a-household-role
 ---
 
 # 0004 — Four roles: owner, organizer, member, minor

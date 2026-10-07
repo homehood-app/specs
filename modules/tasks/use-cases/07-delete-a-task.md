@@ -8,7 +8,7 @@ superseded-by:
 
 As the requester of a task nobody has begun, or as the owner or an organizer, I want to remove a task completely.
 
-**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor-member]]
+**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor]]
 
 ## Pre-conditions
 
@@ -57,11 +57,11 @@ As the requester of a task nobody has begun, or as the owner or an organizer, I 
 | Owner | Every task in the household | Delete any task, in any state |
 | Organizer | Every task in the household | Delete any task except one where the owner is the executor |
 | Member | The tasks where they are the requester or the executor | Delete a task they requested, while it is still `Open` |
-| Minor member | The tasks where they are the requester or the executor | Delete a task they requested, while it is still `Open` |
+| Minor | The tasks where they are the requester or the executor | Delete a task they requested, while it is still `Open` |
 
 ## Applied business rules
 
 - [[rules#who-can-end-a-task]] — the requester before it starts, the owner and organizers at any time
-- [[rules#a-minor-sees-their-own-work-in-full]] — a minor deletes a task they requested while it is still `Open`, the same as a member
+- [[rules#a-minor-works-like-any-other-member]] — a minor deletes a task they requested while it is still `Open`, the same as any member
 - [[rules#archiving-ends-a-task-that-was-started]] — once started, the way out is archiving
 - [[rules#an-organizer-cannot-act-on-the-owners-work]] — an organizer stops at the owner

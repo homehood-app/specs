@@ -53,7 +53,7 @@ As the owner or an organizer, I want to withdraw an invitation so that somebody 
 | Owner | Every invitation to the household | Revoke any pending invitation |
 | Organizer | Every invitation to the household | Revoke any pending invitation, including one another organizer sent |
 | Member | Nothing of this use case | Nothing |
-| Minor member | Nothing of this use case | Nothing |
+| Minor | Nothing of this use case | Nothing |
 
 ## Applied business rules
 

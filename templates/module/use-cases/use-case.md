@@ -36,14 +36,14 @@ As {{actor}}, I want {{action}} so that {{outcome}}.
 
 ## By role
 
-Required. What each role sees and can do in this use case. Four rows, one per role, always — never split a row by age, because a minor is one role at every age. Write `Nothing.` where a role has no view and no action.
+Required. Four rows, always: the three roles, and a minor. Minor is not a role — it is a kind of account that always holds the member role — and it keeps a row so that the minor case is answered in every use case instead of remembered. Where a minor behaves exactly as a member, say so; do not leave the row out. Never split a row by age: nothing about a minor changes with age. Write `Nothing.` where a role has no view and no action.
 
 | Role | Sees | Can do |
 | --- | --- | --- |
 | Owner | | |
 | Organizer | | |
 | Member | | |
-| Minor member | | |
+| Minor | | |
 
 ## Applied business rules
 
