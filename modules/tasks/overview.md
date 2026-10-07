@@ -18,6 +18,7 @@ This is the module the product exists for. A household with no tasks answers no 
 - Starting, commenting on and closing a task
 - Archiving a task that was started and is no longer needed
 - Deleting a task
+- Resolving the active tasks of a member who has left the household
 - Who can see which tasks
 
 ## Out of scope

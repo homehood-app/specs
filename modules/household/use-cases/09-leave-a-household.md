@@ -18,26 +18,16 @@ As a member, I want to take myself out of a household so that I am not in a home
 ## Main flow
 
 1. The member asks to leave.
-2. The system shows the tasks where they are the requester or the executor, and who each one will fall to.
+2. The system shows how many active tasks they are on, and says those will wait for a member with organizer authority to decide.
 3. The member confirms.
-4. The system hands each task on by the fallback in [[rules#nobody-is-left-holding-work-they-are-not-there-for]].
-5. The system removes the member from the household.
+4. The system removes the member from the household. They are now a former member.
+5. Their `Open` and `Started` tasks become unresolved and wait. Their `Closed` and `Archived` tasks are untouched, and still name them.
 
 ## Alternative flows
 
-### The member holds no tasks
+### The member is on no active tasks
 
-1. Step 2 is skipped.
-
-### A task the member was executing was requested by somebody else
-
-1. The requester becomes the executor. They asked for the work, so they are the one who still wants it.
-2. If the task was `Started`, it returns to `Open`. Nobody inherits work already begun.
-
-### A task the member requested is being executed by somebody else
-
-1. The executor keeps it.
-2. The owner becomes the requester.
+1. Step 2 is skipped. There is nothing to resolve.
 
 ### The owner wants to leave
 
@@ -53,9 +43,10 @@ As a member, I want to take myself out of a household so that I am not in a home
 
 ## Post-conditions
 
-- The person is no longer a member, and sees nothing of the household
-- No task in the household keeps the departed person as its requester or its executor
-- Every task that was theirs has a requester and an executor who are still members
+- The person is a former member, and sees nothing of the household
+- Their active tasks are unresolved, and waiting. See [[tasks/use-cases/08-resolve-a-former-members-tasks]]
+- Their closed and archived tasks still name them, and are unchanged
+- Every comment they wrote is unchanged
 - The household still has exactly one owner
 
 ## By role
@@ -63,11 +54,12 @@ As a member, I want to take myself out of a household so that I am not in a home
 | Role | Sees | Can do |
 | --- | --- | --- |
 | Owner | The households they belong to | Nothing here. Hand the household on first, then leave as an organizer |
-| Organizer | The households they belong to, and where their tasks will fall | Leave |
-| Member | The households they belong to, and where their tasks will fall | Leave |
-| Minor member | The households they belong to, and where their tasks will fall | Leave |
+| Organizer | The households they belong to, and how many active tasks they are on | Leave. They do not choose where their tasks go |
+| Member | The households they belong to, and how many active tasks they are on | Leave. They do not choose where their tasks go |
+| Minor member | The households they belong to, and how many active tasks they are on | Leave. They do not choose where their tasks go |
 
 ## Applied business rules
 
 - [[rules#a-household-has-exactly-one-owner-always]] — the owner cannot leave while they hold the household
-- [[rules#nobody-is-left-holding-work-they-are-not-there-for]] — where each of the leaver's tasks goes, and why the leaver does not choose
+- [[rules#a-former-member-stays-on-what-they-left-behind]] — the record of what they did is not rewritten
+- [[rules#an-active-task-of-a-former-member-waits-for-organizer-authority]] — the leaver does not redistribute the household's work

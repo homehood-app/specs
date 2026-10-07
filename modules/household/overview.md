@@ -18,6 +18,7 @@ This module owns the boundary every other module depends on. A task, a comment a
 - Inviting a person, revoking an invitation, and answering one
 - Changing a member's role
 - Removing a member, and leaving on your own
+- What becomes of a former member's tasks and comments
 
 ## Out of scope
 

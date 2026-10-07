@@ -7,6 +7,8 @@
 - A member can act on nobody but themselves
 - A minor can act on nobody but themselves
 
+**Organizer authority** is the shorthand for "an organizer or the owner". The owner does everything an organizer does, so a household always has at least one member with organizer authority.
+
 This rule is about acting on *people*. Asking another member for work is not acting on them — see [[tasks/rules#any-member-can-request-work-from-any-member]].
 
 ## Only the owner changes the household itself
@@ -18,8 +20,8 @@ This rule is about acting on *people*. Asking another member for work is not act
 
 ## The owner and the organizers decide who belongs
 
-- An owner or an organizer can invite a person
-- An owner or an organizer can revoke a pending invitation
+- A member with organizer authority can invite a person
+- A member with organizer authority can revoke a pending invitation
 - An organizer cannot remove the owner, and cannot remove another organizer
 
 ## Membership starts with an accepted invitation
@@ -34,15 +36,21 @@ There is no other way into a household.
 - The owner cannot leave or be removed while they are the owner
 - To leave, the owner hands ownership to another member first, or deletes the household
 
-## Nobody is left holding work they are not there for
+## A former member stays on what they left behind
 
-When a member leaves a household, by any route, no task in that household may keep them as its requester or its executor. Each of their tasks falls back to somebody who is still there:
+Leaving a household does not rewrite the past.
 
-- A task they were executing, that somebody else requested, goes to its requester as the new executor
-- A task they requested, that somebody else is executing, keeps its executor and goes to the owner as the new requester
-- A task where they were both the requester and the executor goes to the owner as both
+- A task keeps its requester and its executor after one of them leaves. A closed or archived task is a record of what happened, and it stays whole
+- A comment keeps its author after they leave
+- A former member sees none of it. They are outside the boundary
 
-The fallback is a default, not a ceiling. Whoever removes a member may hand any of their tasks to a different member first. A member who leaves on their own does not choose — redistributing the household's work is the household's call, not the departing member's
+## An active task of a former member waits for organizer authority
+
+- An `Open` or `Started` task whose requester or executor is a former member is **unresolved**
+- An unresolved task is not lost, and is not silently handed to somebody else. It waits
+- Only a member with organizer authority resolves it — see [[tasks/use-cases/08-resolve-a-former-members-tasks]]
+- A member who leaves on their own does not resolve their own tasks. Redistributing the household's work is the household's call
+- A member with organizer authority who removes somebody may resolve their tasks in the same step, or leave them unresolved
 
 ## A household is a closed boundary
 

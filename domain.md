@@ -18,6 +18,12 @@ A person who belongs to a household. A member joins by accepting an invitation.
 
 Every member holds exactly one role: owner, organizer, member or minor.
 
+## Former member
+
+A person who was a member of a household and is not any more. A former member sees nothing of the household.
+
+The household keeps them on what they left behind. A task they requested or executed still names them, and so does every comment they wrote. A record of what happened is not rewritten because somebody left.
+
 ## Owner
 
 The member who holds the household. Exactly one per household, and the household cannot exist without one.

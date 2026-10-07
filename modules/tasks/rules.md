@@ -7,7 +7,8 @@ They are two roles on the task, not two people. One member asking for their own 
 - The requester is the member who asked for the task
 - The executor is the member who will do it
 - A task has exactly one of each
-- Both are members of the same household as the task
+- Both were members of the household when they were put on the task
+- Neither is ever emptied. A member who leaves stays on their tasks
 
 ## Any member can request work from any member
 
@@ -35,6 +36,15 @@ Moving a task through `Started` and `Closed` is the executor's act. Nobody does 
 - An `Open` task cannot be closed. Work is begun before it is finished
 - An `Open` task that is no longer needed is deleted, not archived
 - `Closed` and `Archived` are final. Neither reopens
+
+## An unresolved task is a task with a former member on it
+
+A task whose requester or executor has left the household keeps them. See [[household/rules#a-former-member-stays-on-what-they-left-behind]].
+
+- A `Closed` or `Archived` task with a former member on it is finished. There is nothing to resolve
+- An `Open` or `Started` task with a former member on it is **unresolved**, and waits
+- Only a member with organizer authority resolves it: reassign it, archive it, or delete it
+- Resolving all of them at once archives every `Started` task and deletes every `Open` one
 
 ## A task is visible to its requester, its executor, the owner and every organizer
 

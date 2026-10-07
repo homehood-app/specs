@@ -1,38 +1,43 @@
 ---
 status: draft
-updated: 2026-10-06
+updated: 2026-10-07
 superseded-by:
 ---
 
 # Remove a member
 
-As the owner or an organizer, I want to remove a member so that the household matches who really lives here.
+As a member with organizer authority, I want to remove a member so that the household matches who really lives here.
 
 **Actors:** [[users#owner]], [[users#organizer]]
 
 ## Pre-conditions
 
 - The household exists
-- The actor is its owner or one of its organizers
+- The actor has organizer authority in it
 - The person to remove is a member of it
 
 ## Main flow
 
 1. The actor selects the member to remove.
-2. The system shows the tasks where that member is the requester or the executor, and who each one will fall to by default.
-3. The actor may hand any of those tasks to a different member instead, or end them.
+2. The system shows the active tasks that member is on.
+3. The actor decides, per task: give it to another member, archive it, or delete it. The actor can also discard the lot, or leave them all for later.
 4. The actor confirms.
-5. The system applies the fallback to everything the actor did not redirect, then removes the member.
+5. The system applies the choices and removes the member. They are now a former member.
 
 ## Alternative flows
 
-### The member holds no tasks
+### The member is on no active tasks
 
 1. Step 2 and step 3 are skipped.
 
-### The actor accepts every default
+### The actor discards the lot
 
-1. Step 3 is skipped. The outcome is the same as if the member had left on their own. See [[09-leave-a-household]].
+1. The system archives every `Started` task and deletes every `Open` one.
+
+### The actor leaves them for later
+
+1. The tasks become unresolved, exactly as if the member had left on their own.
+2. Anybody with organizer authority finishes the job later. See [[tasks/use-cases/08-resolve-a-former-members-tasks]].
 
 ## Exception flows
 
@@ -48,16 +53,18 @@ As the owner or an organizer, I want to remove a member so that the household ma
 
 ## Post-conditions
 
-- The person is no longer a member, and sees nothing of the household
-- No task in the household keeps the removed person as its requester or its executor
+- The person is a former member, and sees nothing of the household
+- Every active task the actor resolved has a current member on it, or is archived, or is gone
+- Every active task the actor did not resolve is unresolved, and waiting
+- The person's closed and archived tasks still name them, and are unchanged
 - The household still has exactly one owner
 
 ## By role
 
 | Role | Sees | Can do |
 | --- | --- | --- |
-| Owner | Every member, and the tasks each one holds | Remove any member except themselves |
-| Organizer | Every member, and the tasks each one holds | Remove any member who is neither the owner nor an organizer |
+| Owner | Every member, and the active tasks each one is on | Remove any member except themselves, and resolve their tasks in the same step |
+| Organizer | Every member, and the active tasks each one is on | Remove any member who is neither the owner nor an organizer, and resolve their tasks in the same step |
 | Member | That they are no longer in the household | Nothing. To go, they leave. See [[09-leave-a-household]] |
 | Minor member | That they are no longer in the household | Nothing |
 
@@ -65,4 +72,5 @@ As the owner or an organizer, I want to remove a member so that the household ma
 
 - [[rules#the-owner-and-the-organizers-decide-who-belongs]] — removal is theirs, and an organizer cannot reach the owner or a peer
 - [[rules#a-household-has-exactly-one-owner-always]] — the owner cannot be removed
-- [[rules#nobody-is-left-holding-work-they-are-not-there-for]] — where the tasks fall by default, and the actor's freedom to redirect them
+- [[rules#a-former-member-stays-on-what-they-left-behind]] — the record of what they did is not rewritten
+- [[rules#an-active-task-of-a-former-member-waits-for-organizer-authority]] — the remover may resolve now or leave it for later
