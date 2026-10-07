@@ -1,6 +1,6 @@
 # Tasks
 
-The household's work: asking for a task, saying who will do it, and moving it through its states until it is finished or abandoned.
+The household's work: asking for a task, saying who will do it, and moving it through its states until it is finished — or until it is no longer needed.
 
 This is the module the product exists for. A household with no tasks answers no question.
 
@@ -16,7 +16,7 @@ This is the module the product exists for. A household with no tasks answers no 
 - Creating a task, and who its requester and its executor are
 - Editing a task
 - Starting, commenting on and closing a task
-- Archiving a task that was started and will not be finished
+- Archiving a task that was started and is no longer needed
 - Deleting a task
 - Who can see which tasks
 

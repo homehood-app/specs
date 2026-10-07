@@ -16,7 +16,7 @@ A person can belong to several households at the same time. Nothing stops it.
 
 A person who belongs to a household. A member joins by accepting an invitation.
 
-Every member holds exactly one role: owner, organizer or plain member. A member may also be a minor.
+Every member holds exactly one role: owner, organizer, member or minor.
 
 ## Owner
 
@@ -32,9 +32,11 @@ An organizer manages members and tasks. An organizer cannot act on the owner, an
 
 ## Minor
 
-A member under the care of the household — in a family, a child. Minor is a property of a member, not a role, so a household with no minors needs no extra concepts.
+The lowest role. A member under the care of the household — in a family, a child.
 
-A minor member has the same authority as a plain member and sees a reduced view of the product. What is reduced is not specified yet.
+A minor does what a plain member does and sees less of it. What is reduced is not specified yet.
+
+There is no minor owner and no minor organizer. A minor who grows into either stops being a minor, by a role change — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
 
 ## Invitation
 
@@ -67,9 +69,9 @@ A task is in exactly one state at a time:
 | Closed | The work is finished |
 | Archived | It was begun and will not be finished. Kept for what it holds |
 
-`Archived` is not "tidied away". It is the end of a task that was started and then abandoned or cancelled. We keep it instead of deleting it because by then it carries history — comments, who started it, when.
+`Archived` is not "tidied away". It is the end of a task that was started and then stopped, because it was cancelled or is no longer needed. We keep it instead of deleting it because by then it carries history — comments, who started it, when.
 
-A task that was never started and will not be done is deleted, not archived. There is nothing in it worth keeping.
+A task that was never started and is no longer needed is deleted, not archived. There is nothing in it worth keeping.
 
 Deleting a task removes it. Deleting is not a state.
 

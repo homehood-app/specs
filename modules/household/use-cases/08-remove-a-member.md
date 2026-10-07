@@ -19,16 +19,20 @@ As the owner or an organizer, I want to remove a member so that the household ma
 ## Main flow
 
 1. The actor selects the member to remove.
-2. The system shows the tasks where that member is the requester or the executor.
-3. The actor chooses another member to take each one over, or chooses to end them.
+2. The system shows the tasks where that member is the requester or the executor, and who each one will fall to by default.
+3. The actor may hand any of those tasks to a different member instead, or end them.
 4. The actor confirms.
-5. The system removes the member from the household.
+5. The system applies the fallback to everything the actor did not redirect, then removes the member.
 
 ## Alternative flows
 
 ### The member holds no tasks
 
 1. Step 2 and step 3 are skipped.
+
+### The actor accepts every default
+
+1. Step 3 is skipped. The outcome is the same as if the member had left on their own. See [[09-leave-a-household]].
 
 ## Exception flows
 
@@ -61,4 +65,4 @@ As the owner or an organizer, I want to remove a member so that the household ma
 
 - [[rules#the-owner-and-the-organizers-decide-who-belongs]] — removal is theirs, and an organizer cannot reach the owner or a peer
 - [[rules#a-household-has-exactly-one-owner-always]] — the owner cannot be removed
-- [[rules#nobody-is-left-holding-work-they-are-not-there-for]] — the member's tasks are handed on or ended first
+- [[rules#nobody-is-left-holding-work-they-are-not-there-for]] — where the tasks fall by default, and the actor's freedom to redirect them

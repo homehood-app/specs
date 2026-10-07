@@ -6,7 +6,7 @@ superseded-by:
 
 # Archive a task
 
-As a member who can see a started task that will not be finished, I want to end it without losing what it holds.
+As a member who can see a started task that is no longer needed, I want to end it without losing what it holds.
 
 **Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor-member]]
 
@@ -17,13 +17,13 @@ As a member who can see a started task that will not be finished, I want to end 
 
 ## Main flow
 
-1. The member says the task will not be finished, and gives the reason.
+1. The member says the task is no longer needed, and gives the reason.
 2. The system sets the task to `Archived`.
 3. The task leaves the active lists, and stays readable with everything on it — its comments, who started it, and when.
 
 ## Alternative flows
 
-### The work is wanted again later
+### The work is needed again later
 
 1. A new task is created for it. An archived task is not reopened.
 
@@ -36,7 +36,7 @@ As a member who can see a started task that will not be finished, I want to end 
 
 ### The task is closed
 
-1. The system refuses and says a finished task is not abandoned.
+1. The system refuses and says a finished task is not the same as a cancelled one.
 2. Nothing changes.
 
 ## Post-conditions
@@ -56,6 +56,7 @@ As a member who can see a started task that will not be finished, I want to end 
 
 ## Applied business rules
 
+- [[rules#a-task-moves-in-one-direction]] — `Archived` is reachable only from `Started`
 - [[rules#archiving-ends-a-task-that-was-started]] — only a started task is archived, and it is kept for what it holds
 - [[rules#who-can-end-a-task]] — who may do it
 - [[rules#an-organizer-cannot-act-on-the-owners-work]] — an organizer stops at the owner

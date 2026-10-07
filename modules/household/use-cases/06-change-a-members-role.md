@@ -64,4 +64,4 @@ As the owner, I want to promote or demote a member so that the people who run th
 ## Applied business rules
 
 - [[rules#only-the-owner-changes-the-household-itself]] — a role change is the owner's alone
-- [[rules#authority-over-members-runs-owner-organizer-member]] — what the new role can do
+- [[rules#authority-over-members-runs-owner-organizer-member-minor]] — what the new role can do

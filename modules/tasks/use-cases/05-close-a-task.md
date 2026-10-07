@@ -1,6 +1,6 @@
 ---
 status: draft
-updated: 2026-10-06
+updated: 2026-10-07
 superseded-by:
 ---
 
@@ -12,7 +12,7 @@ As the executor of a task, I want to say the work is finished so that nobody has
 
 ## Pre-conditions
 
-- The task exists and is in state `Open` or `Started`
+- The task exists and is in state `Started`
 - The actor is its executor
 
 ## Main flow
@@ -23,11 +23,14 @@ As the executor of a task, I want to say the work is finished so that nobody has
 
 ## Alternative flows
 
-### The task was never started
-
-1. The system closes it anyway. Passing through `Started` is not required.
+None.
 
 ## Exception flows
+
+### The task is still `Open`
+
+1. The system refuses and says the task must be started first. See [[03-start-a-task]].
+2. Nothing changes.
 
 ### The actor is not the executor
 
@@ -41,20 +44,21 @@ As the executor of a task, I want to say the work is finished so that nobody has
 
 ## Post-conditions
 
-- The task is in state `Closed`
+- The task is in state `Closed`, which is final
 - The task is finished as soon as the executor closes it
-- The task cannot be archived. Finished is not abandoned
+- The task cannot be archived. Finished is not the same as cancelled
 
 ## By role
 
 | Role | Sees | Can do |
 | --- | --- | --- |
-| Owner | Every task in the household, and which are closed | Close a task only when they are its executor |
-| Organizer | Every task in the household, and which are closed | Close a task only when they are its executor |
-| Member | The tasks where they are the requester or the executor | Close a task they are the executor of |
-| Minor member | The tasks where they are the requester or the executor | Close a task they are the executor of |
+| Owner | Every task in the household, and which are closed | Close a started task only when they are its executor |
+| Organizer | Every task in the household, and which are closed | Close a started task only when they are its executor |
+| Member | The tasks where they are the requester or the executor | Close a started task they are the executor of |
+| Minor member | The tasks where they are the requester or the executor | Close a started task they are the executor of |
 
 ## Applied business rules
 
 - [[rules#the-executor-works-the-task]] — nobody closes another member's work
+- [[rules#a-task-moves-in-one-direction]] — work is begun before it is finished, so an `Open` task cannot be closed
 - [[rules#archiving-ends-a-task-that-was-started]] — a closed task is finished, so it is never archived

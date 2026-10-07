@@ -54,4 +54,5 @@ None.
 ## Applied business rules
 
 - [[rules#the-executor-works-the-task]] — nobody starts another member's work
+- [[rules#a-task-moves-in-one-direction]] — `Started` is the only state a task can be closed or archived from
 - [[rules#who-can-end-a-task]] — starting is what moves a task from "deletable by its requester" to "archivable"

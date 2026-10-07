@@ -4,7 +4,7 @@ The people who use Homehood, and the authority each one holds.
 
 **Scope of this file.** It says who the users are and what authority each one holds across the whole product. It does not say what a user may do in one area of the product. "Who can create a task", "who can close a task", "who sees another member's work" belong in that module's `rules.md` and in the **By role** section of its use cases — not here. See the **By role** section in [[templates/module/use-cases/use-case]].
 
-The names come from [[domain]]. Owner, organizer and member are the three roles, in that order of authority. Minor is a property of a member, not a role. See [[decisions/0004-four-roles-owner-organizer-member-minor]].
+The names come from [[domain]]. Owner, organizer, member and minor are the four roles, in that order of authority. See [[decisions/0004-four-roles-owner-organizer-member-minor]].
 
 ## Owner
 
@@ -68,18 +68,20 @@ A person who belongs to the household and runs their own part of it.
 
 ## Minor member
 
-A member under the care of the household — in a family, a child. A flat share has none. Minor is a property, so an owner or an organizer could also be a minor, although that is unusual.
+The lowest role. A member under the care of the household — in a family, a child. A flat share has none.
 
-**Access:** Joins by accepting an invitation, or is added by an owner or an organizer.
+There is no minor owner and no minor organizer. A minor who grows up changes role.
+
+**Access:** Joins by accepting an invitation, invited as a minor.
 
 **Can:**
 
-- Everything their role allows
+- Everything a member can
 
 **Cannot:**
 
-- Nothing beyond what their role already forbids
+- Everything a member cannot
 
-**Distinguishing characteristics:** Sees a reduced view of the product — less on screen, for the same actions.
+**Distinguishing characteristics:** Does what a member does and sees less of it — less on screen, for the same actions.
 
 **Not yet decided:** exactly what is reduced, and whether it changes with age. Until that is decided, a use case that narrows what a minor sees must say what it hides.
