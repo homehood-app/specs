@@ -54,6 +54,8 @@ One piece of the household's work. A task is the unit everything else attaches t
 
 The everyday word for a household task is "chore". In the spec we always say **task**.
 
+A task is asked for once, or it is made by a routine. Both are tasks, and the same rules govern them — see **routine** below.
+
 ## Requester
 
 The member who asked for the task. The requester wants the work done, and is not necessarily the person who will do it.
@@ -87,4 +89,6 @@ The rules that govern which transitions are allowed, and who may make them, belo
 
 The recurring part of a household's work: the tasks that come back every day or every week, rather than once.
 
-How recurrence is expressed is not specified yet. The term is listed here because the product is a *routine* manager and the word must mean one thing when we start writing that module.
+A routine is a standing instruction. It holds what the work is, how often it comes round, and who does it, and it makes one ordinary task each time the work is due. A routine is never started and never closed, because it describes work rather than being work — see [[decisions/0008-a-routine-is-a-template-that-makes-tasks]].
+
+The task a routine makes is called an **occurrence**, and it is a task like any other. How a routine behaves — its schedule, its turns, what happens to work nobody did — belongs to [[modules/routine/overview]].

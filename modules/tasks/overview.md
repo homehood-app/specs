@@ -24,11 +24,12 @@ This is the module the product exists for. A household with no tasks answers no 
 ## Out of scope
 
 - Who belongs to the household. See [[household/overview]].
-- Recurrence. [[domain]] names *routine* as the recurring part of the household's work, but how a task repeats is not specified yet.
+- How a task repeats. A routine makes tasks and decides when, who does each one, and what happens to one nobody did. See [[routine/overview]].
 
 ## Related modules
 
 - [[household/overview]] — a task exists inside one household, and its requester and executor are members of it
+- [[routine/overview]] — a routine makes tasks. Every task it makes is governed entirely by this module
 
 ## Use cases
 
