@@ -6,4 +6,4 @@ Numbered in the order a reader should meet them, not in the order they were writ
 - [[02-make-a-minor-account-a-full-account]] — the guardian lets the child hold their own account
 - [[03-delete-a-minor-account]] — the guardian ends the account
 
-**Two use cases are missing on purpose:** creating a minor account, and a child signing in to one. They come first in reading order and they are not specified yet — see [[overview]]. These three will be renumbered when they arrive.
+**The list is short because only the minor-account half of this module is decided.** The use cases below are the three that are. Several more belong here and are not specified yet: signing up for a full account and signing in to one, creating a minor account and a child signing in to one, changing what an account holds about the person, and deleting a full account. Most of them come before these three in reading order, so expect these numbers to change — see [[overview]].
