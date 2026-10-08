@@ -61,9 +61,12 @@ This module makes no distinction for a minor. Minor is a kind of account, not a 
 - A minor sees the same tasks as any member: the ones where they are the requester or the executor
 - A minor sees who requested the task, who will do it, which state it is in, and every comment on it
 - A minor creates, edits, starts, closes, comments on, archives and deletes exactly as a member does
-- A minor asks any member for work, including an adult. **Any member can request work from any member** holds with no exception for a minor
+- A minor asks any member for work, whatever kind of account that member holds. **Any member can request work from any member** holds with no exception for a minor
+- A minor who belongs to two households has two separate sets of work. Neither household sees the other's, and neither one is told the child has another
+- A guardian is nobody here. A guardian who is not a member of the household sees none of the child's work in it, and a guardian who is a member sees exactly what their own role shows them — see [[accounts/rules#a-guardian-decides-the-account-not-the-household]]
+- No account can act on a minor's task because of who they are to the child. Authority over a task comes from a role in the household and from nowhere else
 
-The **Minor** row of a **By role** table in this module says the same as the **Member** row. The row is there so that a reader can see it was answered, not forgotten.
+The **Minor** row of a **By role** table in this module says the same as the **Member** row. The row is there so that a reader can see it was answered, not forgotten. No table in this module needs a **Guardian** row, because the answer is always `Nothing.`
 
 ## Archiving ends a task that was started
 

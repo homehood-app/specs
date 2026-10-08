@@ -38,7 +38,7 @@ As the owner, I want to hand the household to another member so that somebody el
 
 ### Every other member is a minor
 
-1. The system refuses for the same reason. A household of one adult and two children has nobody to hand the household to.
+1. The system refuses for the same reason. A household of one parent and two children has nobody to hand the household to.
 2. Nothing changes. The owner invites somebody with a full account first, or deletes the household. See [[10-delete-a-household]].
 
 ### The actor is not the owner
@@ -49,7 +49,7 @@ As the owner, I want to hand the household to another member so that somebody el
 ### The chosen member is a minor
 
 1. The system refuses and says a minor cannot hold the household — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
-2. Nothing changes, and there is no way to make that member eligible. A minor's role never changes.
+2. Nothing changes. The owner cannot make that member eligible: only the child's guardian can, by making the account a full account — see [[accounts/use-cases/02-make-a-minor-account-a-full-account]]. The member then keeps this membership and can receive the household like anybody else.
 
 ## Post-conditions
 

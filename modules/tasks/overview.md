@@ -9,7 +9,9 @@ This is the module the product exists for. A household with no tasks answers no 
 - [[users#owner]] — sees every task in the household, and can act on any of them
 - [[users#organizer]] — sees every task in the household, and can act on the work of any member who is not the owner
 - [[users#member]] — asks for tasks, does tasks, and sees only the tasks that concern them
-- [[users#minor]] — a child of the household. A member here in every way: this module makes no distinction for a minor
+- [[users#minor]] — a child who is a member of the household. A member here in every way: this module makes no distinction for a minor
+
+[[users#guardian]] is not an actor in this module. Guardianship is authority over an account, and it reaches no task — see [[accounts/rules#a-guardian-decides-the-account-not-the-household]].
 
 ## Responsibilities
 

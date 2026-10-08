@@ -33,8 +33,8 @@ None. A person who already belongs to one or more households creates another the
 
 ### The person holds a minor account
 
-1. The system refuses. A minor belongs to one household, the one that made their account, and cannot hold the owner role.
-2. No household is created.
+1. The system refuses. A minor cannot hold the owner role, and creating a household makes you its owner.
+2. No household is created. A minor joins a household when their guardian accepts an invitation for them — see [[05-answer-an-invitation]].
 
 ## Post-conditions
 
@@ -54,6 +54,5 @@ None. A person who already belongs to one or more households creates another the
 ## Applied business rules
 
 - [[rules#a-household-has-exactly-one-owner-always]] — the creator becomes the owner, so the rule holds from the first moment
-- [[rules#a-household-is-a-closed-boundary]] — belonging to one household never blocks belonging to another, unless you are a minor
+- [[rules#a-household-is-a-closed-boundary]] — belonging to one household never blocks belonging to another, for anybody
 - [[rules#a-minor-is-a-member-and-stays-a-member]] — a minor cannot hold the owner role, so a minor cannot start a household
-- [[rules#a-minor-belongs-to-one-household-and-cannot-leave-it]] — a minor has their household already, and never a second

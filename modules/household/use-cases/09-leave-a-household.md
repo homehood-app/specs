@@ -44,8 +44,8 @@ As a member, I want to take myself out of a household so that I am not in a home
 
 ### The actor is a minor
 
-1. The system refuses and says a minor is taken out of the household by the owner or an organizer. See [[08-remove-a-member]].
-2. Nothing changes. There is no path that lets a minor leave by themselves later: a minor stays a minor.
+1. The system refuses and says a minor is taken out of a household by a member with organizer authority there, or by their guardian. See [[08-remove-a-member]].
+2. Nothing changes. No age changes this. What changes it is the guardian making the account a full account — its holder then leaves any household like anybody else. See [[accounts/use-cases/02-make-a-minor-account-a-full-account]].
 
 ## Post-conditions
 
@@ -62,11 +62,12 @@ As a member, I want to take myself out of a household so that I am not in a home
 | Owner | The households they belong to | Nothing here. Hand the household on first, then leave as an organizer |
 | Organizer | The households they belong to, and how many active tasks they are on | Leave. They do not choose where their tasks go |
 | Member | The households they belong to, and how many active tasks they are on | Leave. They do not choose where their tasks go |
-| Minor | The one household they belong to | Nothing. A minor cannot leave on their own. See [[08-remove-a-member]] |
+| Minor | The households they belong to | Nothing. A minor cannot leave on their own. See [[08-remove-a-member]] |
+| Guardian | Which households the minor they hold belongs to | Nothing here. A guardian does not *leave* a household for the child — they remove them. See [[08-remove-a-member]] |
 
 ## Applied business rules
 
 - [[rules#a-household-has-exactly-one-owner-always]] — the owner cannot leave while they hold the household
-- [[rules#a-minor-belongs-to-one-household-and-cannot-leave-it]] — a minor is refused here, and removed instead
+- [[rules#a-minors-memberships-are-their-guardians-to-decide]] — a minor is refused here, and taken out by the household or the guardian instead
 - [[rules#a-former-member-stays-on-what-they-left-behind]] — the record of what they did is not rewritten
 - [[rules#an-active-task-of-a-former-member-waits-for-organizer-authority]] — the leaver does not redistribute the household's work

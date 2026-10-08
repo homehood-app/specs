@@ -5,7 +5,7 @@
 - The owner can act on any member
 - An organizer can act on any member who is neither the owner nor another organizer
 - A member can act on nobody but themselves
-- A minor holds the member role, so a minor can act on nobody — and cannot act on themselves either, because a minor cannot leave
+- A minor holds the member role, so a minor can act on nobody — and cannot act on themselves either, because a minor cannot leave. Their guardian acts on their membership instead, and on nothing else in the household
 
 **Organizer authority** is the shorthand for "an organizer or the owner". The owner does everything an organizer does, so a household always has at least one member with organizer authority.
 
@@ -15,18 +15,22 @@ This rule is about acting on *people*. Asking another member for work is not act
 
 Minor is what the account is, not what the person may do. See [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
-- A minor holds the member role, from the moment the account exists
+- A minor holds the member role in every household they belong to
 - A minor cannot be promoted to organizer
 - A minor cannot receive ownership of the household, and cannot create one
-- A minor's role never changes, at any age. There is no path from a minor account to a full account — see [[decisions/0007-no-age-and-no-conversion-of-a-minor-account]]
+- A minor's role never changes while the account is a minor account, and nothing about it depends on an age. A minor account becomes a full account only by its guardian's decision, outside this module — see [[accounts/rules#a-minor-account-becomes-a-full-account-once]]
 - Apart from the bullets above, this module makes no distinction: everything a member sees, a minor sees, and everything a member may do, a minor may do
 
-## A minor belongs to one household and cannot leave it
+## A minor's memberships are their guardian's to decide
 
-- A minor belongs to exactly one household
-- A minor cannot be a member of a second household, and cannot be invited to one
-- A minor cannot leave. Only a member with organizer authority takes them out — see [[use-cases/08-remove-a-member]]
-- A minor account cannot exist outside a household. When the household removes a minor, or the household is deleted, the account ends with the membership
+A minor belongs where their guardian puts them, and leaves when the household or the guardian says so. See [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
+
+- A minor can be a member of any number of households, like anybody else. A child of separated parents belongs to both homes
+- A minor does not answer an invitation. Their guardian answers it for them — see [[use-cases/05-answer-an-invitation]]
+- A minor cannot leave a household. Two people can take them out: a member with organizer authority in that household, and the minor's guardian — see [[use-cases/08-remove-a-member]]
+- A minor account does not end when a membership does. It survives removal, and it survives the deletion of a household. Only its guardian ends it — see [[accounts/rules#only-the-guardian-ends-a-minor-account]]
+- A minor account can belong to no household at all and still exist. Its guardian holds it
+- A guardian who stops being a member of a household does not take their minor out of it. The two memberships are separate, and a guardian who wants the child out removes them
 - The record of what a minor did stays whole. **A former member stays on what they left behind** holds for a minor like anybody else
 
 ## Only the owner changes the household itself
@@ -42,15 +46,15 @@ Minor is what the account is, not what the person may do. See [[decisions/0006-a
 - A member with organizer authority can revoke a pending invitation
 - An organizer cannot remove the owner, and cannot remove another organizer
 
-## Membership starts with an accepted invitation, or with a minor the household creates
+## Membership starts with an accepted invitation
 
-There are two doors in, and no others.
+One door in, for every kind of account.
 
-- A person with an account of their own becomes a member by accepting an invitation
+- A person becomes a member by accepting an invitation to the household
+- A full account is answered by its own holder. A minor account is answered by its guardian
 - A person is not a member while their invitation is `Pending`
 - A person is not a member if their invitation is `Declined` or `Revoked`
-- A child becomes a member when a member with organizer authority creates a minor account for them inside the household. There is no invitation and nothing to accept
-- How a minor account is created, and how a child signs in to it, is not specified yet
+- Whether making a minor account can also put it straight into a household, without an invitation, is part of how a minor account is created. That is not specified yet — see [[accounts/overview]]
 
 ## A household has exactly one owner, always
 
@@ -72,9 +76,11 @@ Leaving a household does not rewrite the past.
 - Only a member with organizer authority resolves it — see [[tasks/use-cases/08-resolve-a-former-members-tasks]]
 - A member who leaves on their own does not resolve their own tasks. Redistributing the household's work is the household's call
 - A member with organizer authority who removes somebody may resolve their tasks in the same step, or leave them unresolved
+- A guardian who takes their minor out of a household never resolves anything. They cannot see the work, so it always waits for the household — see [[use-cases/08-remove-a-member]]
 
 ## A household is a closed boundary
 
 - A person who is not a member of a household cannot see or change anything inside it
-- A person with an account of their own can be a member of any number of households at the same time
-- A minor is the exception: one household, and never a second
+- Any account can be a member of any number of households at the same time. A minor is no exception
+- A guardian is no exception either. A guardian who is not a member of a household sees nothing inside it, not even of the minor they hold: not their tasks, not the other members, not who the owner is. They see the household's name and that the minor is a member of it, because otherwise they could not tell one of the child's homes from another. Nothing more than that
+- Taking a minor out of a household is not seeing into it. A guardian can remove their minor from a household they cannot see — see [[use-cases/08-remove-a-member]]

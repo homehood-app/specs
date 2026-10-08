@@ -15,7 +15,7 @@ As the owner, I want to promote or demote a member so that the people who run th
 - The household exists
 - The actor is its owner
 - The person is a member of it, and is not the owner
-- The person holds a full account. A minor's role never changes
+- The person holds a full account. A minor's role never changes while the account is a minor account
 
 ## Main flow
 
@@ -37,9 +37,9 @@ As the owner, I want to promote or demote a member so that the people who run th
 
 ### The household wants to give a child more
 
-1. A minor's role cannot change, and a minor account is never made a full one — see [[decisions/0007-no-age-and-no-conversion-of-a-minor-account]].
-2. The child signs up for a full account of their own, a member with organizer authority invites them, and they accept as a member. See [[03-invite-a-person]] and [[05-answer-an-invitation]].
-3. The household then removes the minor account. See [[08-remove-a-member]]. The work the minor account did stays on it, as it does for any former member.
+1. A minor's role cannot change while the account is a minor account, and the household cannot change that. The owner of a household does not decide when somebody else's child grows up.
+2. The child's guardian makes the account a full account. See [[accounts/use-cases/02-make-a-minor-account-a-full-account]]. The person keeps this membership and everything they did in it — nobody is removed and re-invited.
+3. They are then a plain member holding a full account, and this use case can promote them like anybody else.
 
 ## Exception flows
 
@@ -56,7 +56,7 @@ As the owner, I want to promote or demote a member so that the people who run th
 ### The target holds a minor account
 
 1. The system refuses and says a minor is always a member.
-2. Nothing changes. A minor is never promoted, and there is no way to make a minor account a full one.
+2. Nothing changes. A minor is never promoted, and the household has no way to make one eligible. Only the child's guardian changes what the account is — see [[accounts/rules#a-minor-account-becomes-a-full-account-once]].
 
 ## Post-conditions
 
@@ -71,10 +71,12 @@ As the owner, I want to promote or demote a member so that the people who run th
 | Owner | Every member and their role | Promote any member with a full account to organizer, or demote any organizer to member |
 | Organizer | Every member and their role | Nothing. An organizer cannot make or unmake a peer |
 | Member | Their own role | Nothing |
-| Minor | Their own role | Nothing. A minor's role never changes |
+| Minor | Their own role | Nothing. A minor's role never changes while the account is a minor account |
+| Guardian | Nothing of this use case | Nothing. A guardian cannot give the child a role, or take one away |
 
 ## Applied business rules
 
 - [[rules#only-the-owner-changes-the-household-itself]] — a role change is the owner's alone
 - [[rules#authority-over-members-runs-owner-organizer-member]] — what the new role can do
-- [[rules#a-minor-is-a-member-and-stays-a-member]] — a minor is never promoted, and never converted
+- [[rules#a-minor-is-a-member-and-stays-a-member]] — a minor is never promoted while the account is a minor account
+- [[accounts/rules#a-guardian-decides-the-account-not-the-household]] — the guardian changes the kind of account, and never the role

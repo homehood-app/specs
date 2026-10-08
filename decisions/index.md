@@ -10,8 +10,8 @@ Numbers are sequential and never reused.
 
 | № | Decision | Date | Status |
 | --- | --- | --- | --- |
-| 0007 | [[0007-no-age-and-no-conversion-of-a-minor-account]] | 2026-10-07 | accepted |
-| 0006 | [[0006-a-minor-is-an-account-kind-not-a-household-role]] | 2026-10-07 | accepted |
+| 0007 | [[0007-no-age-and-one-way-to-a-full-account]] | 2026-10-08 | accepted |
+| 0006 | [[0006-a-minor-is-an-account-kind-not-a-household-role]] | 2026-10-08 | accepted |
 | 0005 | [[0005-an-active-task-of-a-former-member-waits]] | 2026-10-07 | accepted |
 | 0004 | [[0004-four-roles-owner-organizer-member-minor]] | 2026-10-07 | superseded by 0006 |
 | 0003 | [[0003-a-member-sees-only-their-own-tasks]] | 2026-10-06 | accepted |

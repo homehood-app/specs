@@ -62,6 +62,6 @@ As a member, I want to ask for a piece of work so that it has somebody attached 
 ## Applied business rules
 
 - [[rules#any-member-can-request-work-from-any-member]] — asking somebody else is not reserved to a role
-- [[rules#a-minor-works-like-any-other-member]] — a minor asks any member, including an adult
+- [[rules#a-minor-works-like-any-other-member]] — a minor asks any member, whatever kind of account that member holds
 - [[rules#every-task-has-a-requester-and-an-executor]] — one of each, fixed at creation
 - [[rules#a-task-is-visible-to-its-requester-its-executor-the-owner-and-every-organizer]] — who can see it from now on

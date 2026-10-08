@@ -32,8 +32,9 @@ As the owner, I want to end the household so that a home we no longer share stop
 
 ### The household has minors in it
 
-1. The system says that their accounts go with the household. A minor account cannot exist outside the household that made it.
-2. A member with a full account keeps their account and every other household they belong to. A minor has neither.
+1. Nothing is different. Their accounts do not go with the household: a minor account needs no household to exist, and only its guardian ends it. See [[accounts/rules#only-the-guardian-ends-a-minor-account]].
+2. Each child stops being a member of this household and keeps every other household they belong to. A child who belonged only to this one keeps the account with no household at all, and their guardian still holds it.
+3. The owner is deleting a home, not a person's account. The owner of a household has no power over a child's account, even a child in it.
 
 ## Exception flows
 
@@ -47,8 +48,8 @@ As the owner, I want to end the household so that a home we no longer share stop
 - The household no longer exists
 - Its tasks, comments and pending invitations no longer exist
 - Nobody is a member of it
-- Every minor account the household held no longer exists
-- Every member with a full account still has it, and still has their other households
+- Every account that was a member still exists, whatever kind it is, and still has its other households
+- Every minor account that was a member still has the same guardian
 
 ## By role
 
@@ -57,9 +58,11 @@ As the owner, I want to end the household so that a home we no longer share stop
 | Owner | The whole household, and how many members it has | Delete it |
 | Organizer | That the household is gone | Nothing |
 | Member | That the household is gone | Nothing |
-| Minor | That the household is gone, and their account with it | Nothing |
+| Minor | That the household is gone. Their account is not | Nothing |
+| Guardian | That the minor they hold is in one household fewer | Nothing. A guardian can neither cause this nor stop it |
 
 ## Applied business rules
 
 - [[rules#only-the-owner-changes-the-household-itself]] — ending the household is the owner's alone
-- [[rules#a-minor-belongs-to-one-household-and-cannot-leave-it]] — a minor account cannot outlive the household that holds it
+- [[rules#a-minors-memberships-are-their-guardians-to-decide]] — a minor account outlives the household, and loses one membership
+- [[accounts/rules#only-the-guardian-ends-a-minor-account]] — an owner deleting a home does not delete a child's account

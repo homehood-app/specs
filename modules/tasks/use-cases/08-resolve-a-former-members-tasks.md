@@ -64,6 +64,11 @@ As a member with organizer authority, I want to decide what happens to the activ
 1. Nothing is different. A minor sees their unresolved task and that it waits, like any member.
 2. A minor whose task is given to somebody else stops seeing it, like any member who is no longer on it.
 
+### The tasks are waiting because a guardian took the child out
+
+1. Nothing is different, and this is the ordinary way a minor's work ends up here. A guardian sees nothing inside the household, so they settle nothing — see [[household/use-cases/08-remove-a-member]].
+2. The child's guardian is not consulted and cannot be. The work belongs to the household.
+
 ## Post-conditions
 
 - Every task the actor resolved either has a requester and an executor who are current members, or is `Archived`, or no longer exists
