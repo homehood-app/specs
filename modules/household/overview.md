@@ -9,7 +9,8 @@ This module owns the boundary every other module depends on. A task, a comment a
 - [[users#owner]] — holds the household, and is the only member who can change it
 - [[users#organizer]] — runs the household's day-to-day membership
 - [[users#member]] — belongs to the household
-- [[users#minor-member]] — a member under the care of the household
+- [[users#minor]] — a child who is a member here. A member who did not choose to join and cannot leave or be promoted
+- [[users#guardian]] — the account responsible for a minor. Not a member by being one. Answers the invitation that brings the child in, and can take them out again
 
 ## Responsibilities
 
@@ -19,15 +20,18 @@ This module owns the boundary every other module depends on. A task, a comment a
 - Changing a member's role
 - Removing a member, and leaving on your own
 - What becomes of a former member's tasks and comments
+- What a minor can and cannot do inside the household, and who takes a minor out of it
 
 ## Out of scope
 
-- Everything about the household's work. See [[tasks/overview]].
-- What a minor member sees less of. [[users]] says the view is reduced; what is reduced is not specified yet.
+- Everything about the household's work. See [[tasks/overview]]. A minor's authority over the work is a member's, in full — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
+- The life of an account: the two kinds, guardianship, growing up, and deletion. See [[accounts/overview]]. A household grants and ends a membership; it decides nothing about the account behind it, not even a child's.
+- How a minor account is created, and how a child signs in to it. Not specified yet — see [[accounts/overview]].
 
 ## Related modules
 
 - [[tasks/overview]] — every task belongs to a household, and its requester and executor are members of it
+- [[accounts/overview]] — a membership belongs to an account. For a minor, the guardian answers the invitation and can end the membership from outside
 
 ## Use cases
 

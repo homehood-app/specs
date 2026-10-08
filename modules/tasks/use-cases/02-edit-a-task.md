@@ -8,7 +8,7 @@ superseded-by:
 
 As a member who can see a task, I want to change what it says so that it describes the real work.
 
-**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor-member]]
+**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor]]
 
 ## Pre-conditions
 
@@ -58,7 +58,7 @@ As a member who can see a task, I want to change what it says so that it describ
 | Owner | Every task in the household | Edit any task, including its executor |
 | Organizer | Every task in the household | Edit any task except one where the owner is the executor |
 | Member | The tasks where they are the requester or the executor | Edit those tasks, including the executor |
-| Minor member | The tasks where they are the requester or the executor | Edit those tasks, including the executor |
+| Minor | The tasks where they are the requester or the executor | Edit those tasks, including the executor |
 
 ## Applied business rules
 

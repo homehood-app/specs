@@ -59,6 +59,16 @@ As a member with organizer authority, I want to decide what happens to the activ
 
 1. The system shows them nothing. Resolving is organizer authority.
 
+### A minor is on one of the unresolved tasks
+
+1. Nothing is different. A minor sees their unresolved task and that it waits, like any member.
+2. A minor whose task is given to somebody else stops seeing it, like any member who is no longer on it.
+
+### The tasks are waiting because a guardian took the child out
+
+1. Nothing is different, and this is the ordinary way a minor's work ends up here. A guardian sees nothing inside the household, so they settle nothing — see [[household/use-cases/08-remove-a-member]].
+2. The child's guardian is not consulted and cannot be. The work belongs to the household.
+
 ## Post-conditions
 
 - Every task the actor resolved either has a requester and an executor who are current members, or is `Archived`, or no longer exists
@@ -73,10 +83,11 @@ As a member with organizer authority, I want to decide what happens to the activ
 | Owner | Every unresolved task in the household | Give any of them to a member, archive a started one, delete any, or resolve all at once |
 | Organizer | Every unresolved task in the household | The same, except on a task where the owner is the requester or the executor |
 | Member | Only an unresolved task they are still on themselves | Nothing. Resolving is organizer authority |
-| Minor member | Only an unresolved task they are still on themselves | Nothing |
+| Minor | Only an unresolved task they are still on themselves | Nothing |
 
 ## Applied business rules
 
 - [[rules#an-unresolved-task-is-a-task-with-a-former-member-on-it]] — what is unresolved, and who resolves it
+- [[rules#a-minor-works-like-any-other-member]] — a minor is on the list exactly as a member is
 - [[rules#a-task-moves-in-one-direction]] — a started task is archived, an open one is deleted
 - [[rules#an-organizer-cannot-act-on-the-owners-work]] — an organizer stops at the owner

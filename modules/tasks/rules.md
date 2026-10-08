@@ -16,7 +16,7 @@ Asking is not an act of authority. See [[decisions/0002-any-member-can-give-work
 
 - Any member can create a task with themselves as the executor
 - Any member can create a task with any other member as the executor
-- A minor member can do both
+- A minor can do both
 
 ## The executor works the task
 
@@ -53,6 +53,21 @@ A task whose requester or executor has left the household keeps them. See [[hous
 - The owner and every organizer see every task in the household
 - No other member sees it
 
+## A minor works like any other member
+
+This module makes no distinction for a minor. Minor is a kind of account, not a role, and it takes nothing away from the work — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
+
+- Every rule in this module that says "member" includes a minor
+- A minor sees the same tasks as any member: the ones where they are the requester or the executor
+- A minor sees who requested the task, who will do it, which state it is in, and every comment on it
+- A minor creates, edits, starts, closes, comments on, archives and deletes exactly as a member does
+- A minor asks any member for work, whatever kind of account that member holds. **Any member can request work from any member** holds with no exception for a minor
+- A minor who belongs to two households has two separate sets of work. Neither household sees the other's, and neither one is told the child has another
+- A guardian is nobody here. A guardian who is not a member of the household sees none of the child's work in it, and a guardian who is a member sees exactly what their own role shows them — see [[accounts/rules#a-guardian-decides-the-account-not-the-household]]
+- No account can act on a minor's task because of who they are to the child. Authority over a task comes from a role in the household and from nowhere else
+
+The **Minor** row of a **By role** table in this module says the same as the **Member** row. The row is there so that a reader can see it was answered, not forgotten. No table in this module needs a **Guardian** row, because the answer is always `Nothing.`
+
 ## Archiving ends a task that was started
 
 `Archived` is where a task goes when it was begun and then stopped — cancelled, overtaken, or no longer needed. It is kept rather than deleted because by then it carries history.
@@ -70,7 +85,7 @@ A task whose requester or executor has left the household keeps them. See [[hous
 
 ## An organizer cannot act on the owner's work
 
-Mirrors [[household/rules#authority-over-members-runs-owner-organizer-member-minor]]. Authority over a member's work stops at the owner.
+Mirrors [[household/rules#authority-over-members-runs-owner-organizer-member]]. Authority over a member's work stops at the owner.
 
 - An organizer can edit, archive or delete the task of any member who is not the owner
 - A task whose executor is the owner can be acted on by the owner alone

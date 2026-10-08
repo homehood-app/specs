@@ -69,7 +69,7 @@ Always copy the matching template when you create a file.
 - Dates in ISO format: `YYYY-MM-DD`
 - Internal references as wikilinks: `[[note-name]]`, `[[users#organizer]]`
 - Use cases reference their applicable rules as wikilinks: `[[rules#rule-name]]`
-- Every use case fills the **By role** section. Say what an owner, an organizer, a member and a minor member each see and can do. `Nothing.` is a valid cell; blank is not.
+- Every use case fills the **By role** section. Four rows always: owner, organizer, member, and minor. A minor is not a role — it is a kind of account that always holds the member role — and it keeps a row so the case is answered every time. Add a fifth row, **Guardian**, in any use case where a guardian sees or does something; a guardian is the account responsible for a minor account, and is not a role either. `Nothing.` is a valid cell; blank is not.
 - Keep each file focused. A `rules.md` that grows too large means the module should be split.
 - Write in English.
 

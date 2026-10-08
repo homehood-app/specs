@@ -6,17 +6,34 @@ Use these words. Do not introduce a synonym for a term that already exists here.
 
 ## Household
 
-The group of people who share a home and coordinate their routine together. The household is the boundary of everything in Homehood: a task, an invitation and a member all belong to exactly one household.
+The group of people who share a home and coordinate their routine together. The household is the boundary of everything in Homehood: a task, an invitation and a membership all belong to exactly one household. A person can hold a membership in several, and each one shows them only its own home.
 
-"Household" covers a family, a flat share, or any other group under one roof. We do not say "family" for this concept, even though families are the main audience — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
+"Household" covers a family, a flat share, or any other group under one roof. We do not say "family" for this concept, even though families are the main audience — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
-A person can belong to several households at the same time. Nothing stops it.
+A person can belong to several households at the same time. Nothing stops it, and a minor is no exception — a child of separated parents belongs to both homes.
+
+## Account
+
+What a person signs in with. An account exists outside any household: it is there before the first membership and it survives the last one.
+
+There are two kinds. An account changes kind once, in one direction only — see [[decisions/0007-no-age-and-one-way-to-a-full-account]].
+
+| Kind | Who holds it | How it begins | Who is responsible for it |
+| --- | --- | --- | --- |
+| Full account | Anybody who signs themselves up | The person creates it themselves | Its own holder |
+| Minor account | A child | A full account creates it for them | Its guardian |
+
+A full account is the ordinary one. It belongs to the person who made it, it can be a member of any number of households, it can hold any role, and nobody else answers for it.
+
+A minor account is made for a child, and needs no email address of its own. It can be a member of any number of households and always holds the member role in each one. It cannot choose where it belongs and cannot walk away: its **guardian** does both for it. How it is created, and how a child signs in to it, is not specified yet.
+
+We do not say "user" for this. The person is a **member** of a household; the thing they sign in with is an **account**.
 
 ## Member
 
-A person who belongs to a household. A member joins by accepting an invitation.
+A person who belongs to a household. A member joins by accepting an invitation — for a minor, the guardian accepts it.
 
-Every member holds exactly one role: owner, organizer, member or minor.
+Every member holds exactly one role: owner, organizer or member. A minor always holds the member role.
 
 ## Former member
 
@@ -38,15 +55,32 @@ An organizer manages members and tasks. An organizer cannot act on the owner, an
 
 ## Minor
 
-The lowest role. A member under the care of the household — in a family, a child.
+A person who holds a minor account — in a family, a child. Minor is not a role: it is what the account is. See [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
-A minor does what a plain member does and sees less of it. What is reduced is not specified yet.
+In every household they belong to, a minor is a member and does everything a member does, with nothing taken away. Four things are true of a minor and of nobody else:
 
-There is no minor owner and no minor organizer. A minor who grows into either stops being a minor, by a role change — see [[decisions/0004-four-roles-owner-organizer-member-minor]].
+- They do not decide where they belong. Their guardian accepts an invitation for them
+- They cannot leave a household. Organizer authority in that household takes them out, and so can their guardian
+- They cannot hold the owner role
+- They cannot hold the organizer role
+
+A minor account becomes a full account one day, and its guardian decides when — see [[decisions/0007-no-age-and-one-way-to-a-full-account]]. Nothing about a minor depends on an age, because the product holds none.
+
+A flat share has no minors. A household with no children has none either.
+
+## Guardian
+
+The full account responsible for a minor account. In a family, a parent.
+
+Every minor account has exactly one guardian, and never none. A guardian is the account that made it, until guardianship is handed to another full account. One guardian can hold several minor accounts; a minor account cannot be a guardian.
+
+Guardianship is a relationship between two accounts, outside every household. It is not a role, it gives no authority inside any household, and it lets its holder see nothing that their own membership does not already show them. What a guardian decides is the account: where it belongs, when it leaves, when it becomes a full account, and when it ends. See [[modules/accounts/overview]].
 
 ## Invitation
 
 An offer from an owner or an organizer to a person, to become a member of a household. A person is not a member until the invitation is accepted.
+
+An invitation to a full account is answered by its holder. An invitation to a minor account is answered by its guardian, because a child does not choose which homes they live in.
 
 ## Task
 

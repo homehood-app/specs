@@ -4,7 +4,9 @@ The people who use Homehood, and the authority each one holds.
 
 **Scope of this file.** It says who the users are and what authority each one holds across the whole product. It does not say what a user may do in one area of the product. "Who can create a task", "who can close a task", "who sees another member's work" belong in that module's `rules.md` and in the **By role** section of its use cases — not here. See the **By role** section in [[templates/module/use-cases/use-case]].
 
-The names come from [[domain]]. Owner, organizer, member and minor are the four roles, in that order of authority. See [[decisions/0004-four-roles-owner-organizer-member-minor]].
+The names come from [[domain]]. Owner, organizer and member are the three roles, in that order of authority.
+
+**Minor is not a role, and neither is guardian.** A minor is a kind of account, held by a child, and it always carries the member role in every household it belongs to. A guardian is the one full account responsible for a minor account, outside every household. Both have a persona here because both are people the product has to serve, not because either is a rung on the ladder. See [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
 
 ## Owner
 
@@ -66,22 +68,56 @@ A person who belongs to the household and runs their own part of it.
 
 **Distinguishing characteristics:** Can ask anything of anybody, but sees only what concerns them and acts only on their own work.
 
-## Minor member
+## Minor
 
-The lowest role. A member under the care of the household — in a family, a child. A flat share has none.
+A child, holding an account a guardian made for them. In a family, a son or a daughter. A flat share has none.
 
-There is no minor owner and no minor organizer. A minor who grows up changes role.
+In every household they belong to, a minor is a member. The difference is not what they may do inside a household — it is the account, and who answers for it.
 
-**Access:** Joins by accepting an invitation, invited as a minor.
+**Access:** A guardian creates the account, and the child becomes a member of a household when their guardian accepts an invitation for them. The account needs no email address of its own. How it is created, and how a child signs in, is not specified yet.
 
 **Can:**
 
-- Everything a member can
+- Everything a member can, with nothing taken away: manage their own work, and ask any member for work
+- Belong to any number of households, and hold the member role in each one
 
 **Cannot:**
 
 - Everything a member cannot
+- Choose which households they belong to. Their guardian answers the invitation
+- Take themselves out of a household. Organizer authority there does it, and so can their guardian
+- Hold the owner role, so they cannot create a household and cannot receive one
+- Hold the organizer role, so they are never promoted
+- Decide that their own account becomes a full one. Their guardian decides that
 
-**Distinguishing characteristics:** Does what a member does and sees less of it — less on screen, for the same actions.
+**Distinguishing characteristics:** A member in every way that concerns the work, and the only member who did not choose to be here and cannot choose to leave.
 
-**Not yet decided:** exactly what is reduced, and whether it changes with age. Until that is decided, a use case that narrows what a minor sees must say what it hides.
+A minor is an account kind rather than a role — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]]. Nothing about a minor depends on an age, because the product holds none, and the account becomes a full one when the guardian decides — see [[decisions/0007-no-age-and-one-way-to-a-full-account]].
+
+## Guardian
+
+The person responsible for a child's account. In a family, a parent. Always a full account, and a person who may or may not share a household with the child.
+
+A guardian is not a member of anything by being a guardian. Their authority is over one account, not over a home.
+
+**Access:** They hold a full account and they made a minor account, or another guardian handed one to them.
+
+**Can:**
+
+- Accept or decline an invitation to a household on behalf of the minor they hold
+- Take that minor out of any household they belong to
+- Hand the minor account to another full account
+- Make the minor account a full account, which ends their own guardianship of it
+- Delete the minor account
+- See which households the minor belongs to
+
+**Cannot:**
+
+- See anything inside a household they are not a member of — not the minor's tasks there, not its members, not its roles
+- Act on the minor's work, in any household. A guardian who is a member of the household has their own role, and being the guardian adds nothing to it
+- Be rid of the account by walking away. They hand it on or they delete it
+- Hold guardianship of a minor account together with anybody else. There is exactly one guardian
+
+**Distinguishing characteristics:** The only person in the product whose authority is over an account rather than over a household, and the only one who decides something for somebody else.
+
+See [[modules/accounts/overview]] for what a guardian does, and [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]] for why the guardian exists at all.

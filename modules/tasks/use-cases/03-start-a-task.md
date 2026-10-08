@@ -8,7 +8,7 @@ superseded-by:
 
 As the executor of a task, I want to say I have begun so that the household knows it is being handled.
 
-**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor-member]]
+**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor]]
 
 ## Pre-conditions
 
@@ -49,7 +49,7 @@ None.
 | Owner | Every task in the household, and which are started | Start a task only when they are its executor |
 | Organizer | Every task in the household, and which are started | Start a task only when they are its executor |
 | Member | The tasks where they are the requester or the executor | Start a task they are the executor of |
-| Minor member | The tasks where they are the requester or the executor | Start a task they are the executor of |
+| Minor | The tasks where they are the requester or the executor | Start a task they are the executor of |
 
 ## Applied business rules
 

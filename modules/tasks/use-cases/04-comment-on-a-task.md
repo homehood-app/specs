@@ -8,7 +8,7 @@ superseded-by:
 
 As a member who can see a task, I want to write on it so that the conversation stays with the work.
 
-**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor-member]]
+**Actors:** [[users#member]], [[users#organizer]], [[users#owner]], [[users#minor]]
 
 ## Pre-conditions
 
@@ -49,7 +49,7 @@ None.
 | Owner | Every task in the household and every comment on it | Comment on any task |
 | Organizer | Every task in the household and every comment on it | Comment on any task |
 | Member | The tasks where they are the requester or the executor, with their comments | Comment on those tasks |
-| Minor member | The tasks where they are the requester or the executor, with their comments | Comment on those tasks |
+| Minor | The tasks where they are the requester or the executor, with their comments | Comment on those tasks |
 
 ## Applied business rules
 
