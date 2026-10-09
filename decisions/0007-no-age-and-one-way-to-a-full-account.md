@@ -56,7 +56,7 @@ An earlier version of this record chose option B, and rejected the upgrade "on o
 
 What finally settled it is that option B gets worse with the family, not better. One household, one child: option B costs one awkward pair of rows. A child in two homes, under [[0006-a-minor-is-an-account-kind-not-a-household-role]], costs two — and worse, it asks which of the two homes gets to re-invite the teenager first, which is a question no household should be answering. The upgrade belongs on the account because the account is the only thing in the product that is about the person rather than about a home.
 
-The risk we took care over is the account changing hands. A guardian who could flip a minor account to a full one and keep the credentials would own a second identity. That is why the upgrade finishes with the child supplying the email address and the password, not the guardian: the guardian can start it and cannot complete it. A guardian who wants the child gone has a different act available, and it is honest about what it does — see [[modules/accounts/use-cases/03-delete-a-minor-account]].
+The risk we took care over is the account changing hands. A guardian who could flip a minor account to a full one and keep the credentials would own a second identity. That is why the upgrade finishes with the child supplying the email address and the password, not the guardian: the guardian can start it and cannot complete it. A guardian who wants the child gone has a different act available, and it is honest about what it does — see [[modules/accounts/use-cases/06-delete-a-minor-account]].
 
 We rejected making the upgrade reversible. There is no case for turning a person's own account back into somebody else's, and a reversible one would mean a guardian could take an account back off an adult.
 
@@ -65,7 +65,7 @@ We rejected making the upgrade reversible. There is no case for turning a person
 - [[domain]] — **Account** changes kind once, in one direction
 - [[users]] — the minor persona does not decide this; the guardian persona does
 - [[modules/accounts/rules#a-minor-account-becomes-a-full-account-once]] — the rule that carries this decision
-- [[modules/accounts/use-cases/02-make-a-minor-account-a-full-account]] — the flow, including the part the child must do
+- [[modules/accounts/use-cases/04-make-a-minor-account-a-full-account]] — the flow, including the part the child must do
 - [[modules/household/rules#a-minor-is-a-member-and-stays-a-member]] — the role does not change here; the kind of account does
 - [[modules/household/use-cases/06-change-a-members-role]] — the household's path for "give the child more" is to wait for the guardian, then promote
 - [[modules/household/use-cases/07-transfer-ownership]] — a minor cannot receive the household until the account is a full one

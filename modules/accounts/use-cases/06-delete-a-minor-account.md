@@ -38,7 +38,7 @@ As the guardian of a minor account, I want to delete it so that an account nobod
 
 ### The guardian wants the child to keep what they did
 
-1. Deleting is the wrong act. The guardian makes the account a full account instead, and the child keeps everything. See [[02-make-a-minor-account-a-full-account]].
+1. Deleting is the wrong act. The guardian makes the account a full account instead, and the child keeps everything. See [[04-make-a-minor-account-a-full-account]].
 
 ## Exception flows
 

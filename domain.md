@@ -25,7 +25,7 @@ There are two kinds. An account changes kind once, in one direction only — see
 
 A full account is the ordinary one. It belongs to the person who made it, it can be a member of any number of households, it can hold any role, and nobody else answers for it.
 
-A minor account is made for a child, and needs no email address of its own. It can be a member of any number of households and always holds the member role in each one. It cannot choose where it belongs and cannot walk away: its **guardian** does both for it. How it is created, and how a child signs in to it, is not specified yet.
+A minor account is made for a child by a full account, which becomes its **guardian** by that act, and it needs no email address of its own. The child reaches it with a name of its own kind and a short secret, neither of them an email address or a password — see [[modules/accounts/domain]] and [[decisions/0014-a-child-signs-in-with-a-handle-and-a-pin]]. It can be a member of any number of households and always holds the member role in each one. It cannot choose where it belongs and cannot walk away: its guardian does both for it.
 
 We do not say "user" for this. The person is a **member** of a household; the thing they sign in with is an **account**.
 
@@ -80,7 +80,7 @@ Guardianship is a relationship between two accounts, outside every household. It
 
 An offer from an owner or an organizer to a person, to become a member of a household. A person is not a member until the invitation is accepted.
 
-An invitation to a full account is answered by its holder. An invitation to a minor account is answered by its guardian, because a child does not choose which homes they live in.
+An invitation to a full account is answered by its holder. An invitation to a minor account is answered by its guardian, because a child does not choose which homes they live in — and it is addressed to the guardian too, because a minor account holds nothing a household could send to.
 
 ## Task
 

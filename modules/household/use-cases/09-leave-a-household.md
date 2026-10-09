@@ -45,7 +45,7 @@ As a member, I want to take myself out of a household so that I am not in a home
 ### The actor is a minor
 
 1. The system refuses and says a minor is taken out of a household by a member with organizer authority there, or by their guardian. See [[08-remove-a-member]].
-2. Nothing changes. No age changes this. What changes it is the guardian making the account a full account — its holder then leaves any household like anybody else. See [[accounts/use-cases/02-make-a-minor-account-a-full-account]].
+2. Nothing changes. No age changes this. What changes it is the guardian making the account a full account — its holder then leaves any household like anybody else. See [[accounts/use-cases/04-make-a-minor-account-a-full-account]].
 
 ## Post-conditions
 

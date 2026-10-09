@@ -15,7 +15,7 @@ The module covers **both kinds of account**, full and minor, for the whole of th
 ## Responsibilities
 
 - The two kinds of account, and the one change of kind that is possible
-- Creating an account, of either kind, and signing in to one
+- Creating an account, of either kind, and signing in to one. A child does it with a handle, a claim code and a PIN — see [[domain]]
 - What an account holds about the person, and who can change it
 - Ending an account, of either kind
 - Guardianship: that every minor account has exactly one guardian, and how guardianship moves
@@ -26,11 +26,10 @@ The module covers **both kinds of account**, full and minor, for the whole of th
 
 These are this module's to answer. Nothing below is settled, and nothing below should be inferred from what is written.
 
-- **Signing up for a full account, and signing in to one.** The ordinary front door, and still open.
-- **How a minor account is created, and how a child signs in to it.** A child needs no email address and no password of the usual kind, so this is not the same question as the one above. See [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
-- **What an account holds about the person** — a name, a picture, anything else — and who may change it. For a minor account, whether the child may change any of it themselves.
+- **Signing up for a full account, and signing in to one.** The ordinary front door, and still open. The minor front door is answered and is a different question — see [[decisions/0014-a-child-signs-in-with-a-handle-and-a-pin]].
+- **What a full account holds about the person** — a name, a picture, anything else — and who may change it. What a *minor* account holds is settled: see [[rules#an-account-holds-a-name-a-handle-and-a-picture]].
 - **Deleting a full account.** One part of it is already settled, because it touches guardianship: a guardian cannot leave a minor account behind. See [[rules#every-minor-account-has-exactly-one-guardian]]. The rest is open.
-- **Whether a deleted account can come back**, of either kind.
+- **Whether a deleted full account can come back.** A deleted minor account cannot — see [[rules#only-the-guardian-ends-a-minor-account]].
 
 ## Out of scope
 

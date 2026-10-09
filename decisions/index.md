@@ -10,6 +10,7 @@ Numbers are sequential and never reused.
 
 | № | Decision | Date | Status |
 | --- | --- | --- | --- |
+| 0014 | [[0014-a-child-signs-in-with-a-handle-and-a-pin]] | 2026-10-08 | accepted |
 | 0007 | [[0007-no-age-and-one-way-to-a-full-account]] | 2026-10-08 | accepted |
 | 0006 | [[0006-a-minor-is-an-account-kind-not-a-household-role]] | 2026-10-08 | accepted |
 | 0005 | [[0005-an-active-task-of-a-former-member-waits]] | 2026-10-07 | accepted |
