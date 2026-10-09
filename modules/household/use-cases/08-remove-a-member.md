@@ -33,7 +33,7 @@ As a member with organizer authority, I want to remove a member so that the hous
 ### The member is a minor
 
 1. The flow is the same, and the account is not touched. The child stops being a member of this household and keeps every other household they belong to.
-2. A minor account does not need a household to exist. Only its guardian ends it — see [[accounts/use-cases/03-delete-a-minor-account]].
+2. A minor account does not need a household to exist. Only its guardian ends it — see [[accounts/use-cases/06-delete-a-minor-account]].
 3. The child cannot do this themselves. This use case is one of the two ways a minor leaves a household, and the other is the same use case with the guardian as the actor. See [[09-leave-a-household]].
 
 ### The actor is the guardian of the minor, and has no organizer authority here

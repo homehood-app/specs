@@ -54,7 +54,8 @@ One door in, for every kind of account.
 - A full account is answered by its own holder. A minor account is answered by its guardian
 - A person is not a member while their invitation is `Pending`
 - A person is not a member if their invitation is `Declined` or `Revoked`
-- Whether making a minor account can also put it straight into a household, without an invitation, is part of how a minor account is created. That is not specified yet — see [[accounts/overview]]
+- **Making a minor account does not put it into a household.** There is no second door. A guardian who runs the household invites their own child and answers that invitation themselves — see [[accounts/use-cases/01-create-a-minor-account]]
+- An invitation to a minor account is addressed to its guardian. A minor account cannot be addressed directly, because it holds no email address and its handle is not an address — see [[use-cases/03-invite-a-person]]
 
 ## A household has exactly one owner, always
 

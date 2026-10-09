@@ -33,9 +33,15 @@ As the person who answers for the invited account, I want to accept or decline s
 ### The invitation is to a minor account
 
 1. The guardian answers it. The child is not asked and cannot answer — a child does not choose which homes they live in.
-2. On accept, the minor is a member with the plain member role, like any member, and works exactly as any member does. See [[tasks/rules#a-minor-works-like-any-other-member]].
-3. The guardian does not become a member of the household by answering. If they were not a member before, they are not one now, and they see nothing inside it.
-4. The household sees that the guardian answered, and who they are.
+2. The invitation was addressed to the guardian, not to the child, so **the guardian chooses which of the minor accounts they hold it applies to** before they accept. The household said which child it meant in words; the guardian decides which account that is — see [[03-invite-a-person]].
+3. On accept, the minor is a member with the plain member role, like any member, and works exactly as any member does. See [[tasks/rules#a-minor-works-like-any-other-member]].
+4. The guardian does not become a member of the household by answering. If they were not a member before, they are not one now, and they see nothing inside it.
+5. The household sees that the guardian answered, who they are, and which child joined.
+
+### The guardian holds no minor account the invitation could be for
+
+1. The guardian declines, and the household learns only that it was declined.
+2. Nothing tells the household whether the guardian holds that child, or any child. A household cannot find a child through the product — see [[decisions/0014-a-child-signs-in-with-a-handle-and-a-pin]].
 
 ### The invited person already belongs to other households
 
@@ -57,7 +63,7 @@ As the person who answers for the invited account, I want to accept or decline s
 ### A minor tries to answer their own invitation
 
 1. The system refuses and says their guardian answers it.
-2. Nothing changes. There is no age at which this changes — what changes it is the account becoming a full account. See [[accounts/use-cases/02-make-a-minor-account-a-full-account]].
+2. Nothing changes. There is no age at which this changes — what changes it is the account becoming a full account. See [[accounts/use-cases/04-make-a-minor-account-a-full-account]].
 
 ## Post-conditions
 

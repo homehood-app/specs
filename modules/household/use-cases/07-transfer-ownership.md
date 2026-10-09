@@ -49,7 +49,7 @@ As the owner, I want to hand the household to another member so that somebody el
 ### The chosen member is a minor
 
 1. The system refuses and says a minor cannot hold the household — see [[decisions/0006-a-minor-is-an-account-kind-not-a-household-role]].
-2. Nothing changes. The owner cannot make that member eligible: only the child's guardian can, by making the account a full account — see [[accounts/use-cases/02-make-a-minor-account-a-full-account]]. The member then keeps this membership and can receive the household like anybody else.
+2. Nothing changes. The owner cannot make that member eligible: only the child's guardian can, by making the account a full account — see [[accounts/use-cases/04-make-a-minor-account-a-full-account]]. The member then keeps this membership and can receive the household like anybody else.
 
 ## Post-conditions
 

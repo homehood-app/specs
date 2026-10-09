@@ -26,14 +26,20 @@ As the owner or an organizer, I want to invite a person so that they can join th
 ### The person holds a minor account
 
 1. The invitation is made the same way. A child can be invited into a home like anybody else — a child of separated parents is invited into the second one.
-2. The system delivers it to the minor's guardian, not to the child, because the guardian is who answers it. See [[05-answer-an-invitation]].
-3. The actor sees who the guardian is. You cannot invite a child into your home without knowing which person agreed to it.
-4. How the actor identifies a minor account, which holds no email address of its own, is not specified yet — see [[accounts/overview]].
+2. **The actor addresses the invitation to the child's guardian, not to the child.** They identify the guardian the way they would identify anybody holding a full account, and say which child the invitation is for in their own words.
+3. The system delivers it to the guardian, who chooses which of the minor accounts they hold it applies to when they answer it. See [[05-answer-an-invitation]].
+4. The actor sees who the guardian is, because they addressed it to them. You cannot invite a child into your home without knowing which person agreed to it.
+5. A minor account is never addressed by its handle. A handle is how a child signs in, not a way to find a child — see [[decisions/0014-a-child-signs-in-with-a-handle-and-a-pin]].
+
+### The actor does not know who the child's guardian is
+
+1. There is nothing the system can tell them. A child cannot be found in the product, by handle or by name.
+2. The actor asks the family. Putting a child in your home needs the agreement of the person responsible for them, so this is a conversation they were going to have.
 
 ### The household wants to add a child who has no account yet
 
-1. There is nothing to invite. Somebody makes the child a minor account first, and becomes its guardian.
-2. How a minor account is created is not specified yet — see [[accounts/overview]].
+1. There is nothing to invite. Somebody makes the child a minor account first, and becomes its guardian — see [[accounts/use-cases/01-create-a-minor-account]].
+2. Any full account can do it, including the owner's own, and the maker becomes the guardian. Making the account does not put the child in the household; this use case still has to happen afterwards.
 
 ### The person is already a member
 

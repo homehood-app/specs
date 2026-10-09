@@ -38,7 +38,7 @@ As the owner, I want to promote or demote a member so that the people who run th
 ### The household wants to give a child more
 
 1. A minor's role cannot change while the account is a minor account, and the household cannot change that. The owner of a household does not decide when somebody else's child grows up.
-2. The child's guardian makes the account a full account. See [[accounts/use-cases/02-make-a-minor-account-a-full-account]]. The person keeps this membership and everything they did in it — nobody is removed and re-invited.
+2. The child's guardian makes the account a full account. See [[accounts/use-cases/04-make-a-minor-account-a-full-account]]. The person keeps this membership and everything they did in it — nobody is removed and re-invited.
 3. They are then a plain member holding a full account, and this use case can promote them like anybody else.
 
 ## Exception flows
